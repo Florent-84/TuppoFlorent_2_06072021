@@ -1,90 +1,84 @@
-                        
-                           /* Définition de la police */
+/* POLICE */
 
-@font-face 
-{
-font-family: 'raleway' sans-serif;
-src: url('fonts/raleway-regular-webfont.eot');
-src: url('fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
- url('fonts/raleway-regular-webfont.woff2') format('woff2'),
- url('fonts/raleway-regular-webfont.woff') format('woff'),
- url('fonts/raleway-regular-webfont.ttf') format('truetype'),
- url('fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
-font-weight: normal;
-font-style: normal;
+@font-face {
+    font-family: 'raleway';
+    src: url('fonts/raleway-regular-webfont.eot');
+    src: url('fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('fonts/raleway-regular-webfont.woff') format('woff'),
+         url('fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-                            /* Corps */
+/* BODY */
 
-
-
-
-                           /* Header,Navigation */
-header
+#bloc_page
 {
-    justify-content: auto;
-    flex-wrap: wrap; 
-}                           
+    width: auto;
+    margin: 40px;
+    font-family: 'raleway';
+}
 
-nav ul
-{
-    list-style-type: none;
+/* HEADER/NAVIGATION */
+
+header {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; 
 }
 
-nav li
-{
-    justify-content: flex-end;
-    align-items: center;
-    color: #0065FC;
-    font-family: 'Raleway', sans-serif;
-}
-
-nav a
-{   
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    color: black;
+nav {
+    display: flex;
+    flex-direction: center;
     justify-content: space-between;
     align-items: flex-end;
-}
-
-                            /* section */
-
-                            /* Footer */
-
-footer
-{
-    background: #F2F2F2;
-    position:absolute;
-    bottom:0;
-    width:100%;
-    padding-top:50px;
-    height:50px;
-}                            
-           
-footer nav
-{   
-    
-    font-family: 'raleway' sans-serif;
-    display: flex;
     flex-wrap: wrap;
+         
+}
+
+ul {
+    display: flex;
     justify-content: space-between;
-    padding: auto;
-    margin:bottom;
+    list-style-type: none;
+    
+    text-align: center;
+    color:#0065FC;
+    color: black;
+    font-weight: bold;
 }
 
-footer a
-{
-    font-family: 'raleway' sans-serif;
+a {
+    text-decoration: none;
+    justify-content: space-around;
+
+    
 }
 
-footer h1
-{
-    font-family: 'raleway' sans-serif;
+a:hover {
+    padding-top: 40px;   
+    border-top: solid; 
+    border-width: 3px;
+    border-top-color:  #0065FC;
+    color: #0065FC;  
+    font-weight: bold;
+    
 }
-  
+ 
+/* SECTION 1 */
+
+h1 {
+    
+    font-size: 1.3em;  
+}  
+
+h2 { 
+   font-size: 0.9em;
+   font-weight: normal;
+}
+
+/* FOOTER */
