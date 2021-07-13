@@ -1,4 +1,4 @@
-/* POLICE */
+                                        /* POLICE */
 
 @font-face {
     font-family: 'raleway';
@@ -13,63 +13,54 @@
 
 }
 
-/* BODY */
+                                        /* BODY */
 
-#bloc_page
-{
+#bloc_page {
     width: auto;
     margin: 40px;
     font-family: 'raleway';
 }
+                                        /* HEADER/NAVIGATION */
 
-/* HEADER/NAVIGATION */
-
-header {
+header {  
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    flex-wrap: wrap; 
+    font-weight: bold;
 }
 
 nav {
     display: flex;
-    flex-direction: center;
     justify-content: space-between;
-    align-items: flex-end;
     flex-wrap: wrap;
-         
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    
-    text-align: center;
-    color:#0065FC;
-    color: black;
-    font-weight: bold;
+    width: 350px;
+    padding-right: 40px;   
 }
 
 a {
     text-decoration: none;
-    justify-content: space-around;
-
-    
+    color: black;
+    font-weight: bold;   
 }
 
-a:hover {
-    padding-top: 40px;   
-    border-top: solid; 
-    border-width: 3px;
-    border-top-color:  #0065FC;
-    color: #0065FC;  
-    font-weight: bold;
-    
+.hebergements :hover {
+    text-decoration: none;
+    color: #0065FC;
+    border-top: solid; padding-top: 52px; 
+    border-width: 2px;
+} 
+
+.activites :hover {
+    text-decoration: none;
+    color: #0065FC;
+    border-top: solid; padding-top: 52px;
+    border-width: 2px;
 }
+
  
-/* SECTION 1 */
+                                        /* TITRE */
 
 h1 {
     
@@ -80,5 +71,28 @@ h2 {
    font-size: 0.9em;
    font-weight: normal;
 }
+                                        /* BARRE DE RECHERCHE */
+                                
+                                        /* FILTRES */
+                                        
+                                        /* FOOTER */
 
-/* FOOTER */
+footer {
+    background-color: #F2F2F2;
+    bottom:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-weight: bold;                                          
+ }
+                                                                             
+ul {
+    padding: 0;     
+}
+                                        
+li {
+    list-style-type: none;
+    font-size: 0.8em;
+    font-weight: normal; 
+}
