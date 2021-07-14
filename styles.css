@@ -78,15 +78,14 @@ h2 {
                                         /* FOOTER */
 
 footer {
+    position: absolute; width: 100%; bottom:0; left: 0; right: 0;
     background-color: #F2F2F2;
-    bottom:0;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
     font-weight: bold;                                          
  }
-                                                                             
+                                                                            
 ul {
     padding: 0;     
 }
