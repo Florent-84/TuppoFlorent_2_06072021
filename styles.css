@@ -21,6 +21,7 @@
   margin-right: 40px;
   font-family: "raleway";
 }
+
 /* HEADER/NAVIGATION */
 
 header {
@@ -76,6 +77,19 @@ h2 {
   font-weight: normal;
 }
 /* BARRE DE RECHERCHE */
+
+.recherche {
+  display: flex;
+  justify-content: flex-start;
+  width: 422px; height: 52px;
+}
+
+input {
+  height: 52px;
+  border: 0;
+}
+
+
 
 /* FILTRES */
 
