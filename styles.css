@@ -17,7 +17,8 @@
 
 #bloc_page {
   width: auto;
-  margin: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
   font-family: "raleway";
 }
 /* HEADER/NAVIGATION */
@@ -31,34 +32,37 @@ header {
   font-weight: bold;
 }
 
-nav {
+nav { 
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 350px;
-  padding-right: 40px;
+  align-items: flex-end;
+  justify-content: flex-end;   
+}
+
+.menu {
+  display: flex;
+  width: 300px;
+}
+
+.nav-element {
+  padding-top: 20px;
+  color: #0065fc;
+}
+.menu-element {
+  border-top: 2px solid transparent;
+  width: 50%;
+  text-align: center;
+  padding-top: 20px;
+  }
+
+.menu-element:hover {
+  border-top: 1px solid #0065fc;
+  color: #0065fc;
 }
 
 a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-}
-
-.hebergements :hover {
-  text-decoration: none;
-  color: #0065fc;
-  border-top: solid;
-  padding-top: 52px;
-  border-width: 2px;
-}
-
-.activites :hover {
-  text-decoration: none;
-  color: #0065fc;
-  border-top: solid;
-  padding-top: 52px;
-  border-width: 2px;
 }
 
 /* TITRE */
@@ -79,10 +83,7 @@ h2 {
 
 footer {
   position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%; bottom: 0; left: 0; right: 0;
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-around;
