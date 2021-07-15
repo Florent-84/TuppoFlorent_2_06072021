@@ -68,7 +68,7 @@ a {
 /* TITRE */
 
 h1 {
-  font-size: 1.3em;
+  font-size: 1.8em;
 }
 
 h2 {
@@ -82,14 +82,32 @@ h2 {
 /* FOOTER */
 
 footer {
-  position: absolute;
-  width: 100%; bottom: 0; left: 0; right: 0;
-  background-color: #f2f2f2;
+  height: 25%;
+  background-color: #DEEBFF;  
+  bottom: 0; left: 0; right: 0;
+  position: absolute;  
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  font-weight: bold;
+  align-items: center;
 }
+
+.apropos {
+  height: 48%;
+  padding-left: 2.5%;
+  font-size: 0.8em;
+}
+
+.noshebergements {
+  padding-right: 10%;
+  font-size: 0.8em;
+}
+
+.asistance {
+  padding-right: 20%;
+  font-size: 0.8em;
+}
+
 
 ul {
   padding: 0;
@@ -97,6 +115,6 @@ ul {
 
 li {
   list-style-type: none;
-  font-size: 0.8em;
-  font-weight: normal;
+  font-size: 1em;
+  
 }
