@@ -63,31 +63,76 @@ nav {
 a {
   text-decoration: none;
   color: black;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /* TITRE */
 
 h1 {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 h2 {
-  font-size: 1.18em;
+  font-size: 1.05em;
   font-weight: normal;
 }
 /* BARRE DE RECHERCHE */
 
-.recherche {
+
+form {
   display: flex;
-  justify-content: flex-start;
-  width: 422px; height: 52px;
+  justify-content: space-around;
+  width: 430px; height: 50px;
 }
 
-input {
-  height: 52px;
-  border: 0;
+.fas {
+  background-color: #DEEBFF;
+  border: none;
 }
+
+.fas:nth-of-type(1){
+  width: 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+  
+
+input:nth-of-type(1) {
+  width: 234px;
+  border-top:  #DEEBFF solid;
+  border-bottom: #DEEBFF solid;
+  border-left: #DEEBFF solid;
+  border-right: #DEEBFF solid;
+  border-width: 1px;
+}
+
+input:nth-of-type(2) {
+  width: 134px;
+  text-align: center;
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+input {
+  font-family: "raleway";
+  text-align: left;
+  font-size:  medium;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -109,17 +154,17 @@ footer {
 .apropos {
   height: 67%;
   padding-left: 2.5%;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .noshebergements {
   padding-right: 10%;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .asistance {
   padding-right: 20%;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 
@@ -129,5 +174,7 @@ ul {
 
 li {
   list-style-type: none;
-  font-size: 1em;  
+  font-size: 0.9em;  
 }
+
+
