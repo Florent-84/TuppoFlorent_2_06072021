@@ -125,18 +125,33 @@ input {
   font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* FILTRES */
+
+.ulfiltres {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px; width: 930px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.money {
+
+}
+
+.child {
+
+}
+
+.heart {
+
+}
+
+.dog {
+  
+}
+
 
 /* FOOTER */
 
