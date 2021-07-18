@@ -30,37 +30,62 @@
 
       <!--BARRE DE RECHERCHE-->
       <main>
-      <section>
-        <form>
-          <button class="fas fa-map-marker-alt"></button>
-          <input
-            type="text"
-            name="ville,pays"
-            id="ville,pays"
-            placeholder="Marseille, France"
-          />
-          <input type="submit" value="Rechercher" />
-        </form>
-      </section>
-      <br>
+        <section>
+          <form>
+            <button class="fas fa-map-marker-alt"></button>
+            <input
+              type="text"
+              name="ville,pays"
+              id="ville,pays"
+              placeholder="Marseille, France"
+            />
+            <input type="submit" value="Rechercher" />
+          </form>
+        </section>
+        <br />
 
-
-      <!--FILTRES-->
-      <section>
-          <div class="ulfiltres">
-           <div class="filtres">Filtres</div>
-           <div class="money"><i class="fas fa-money-bill-wave-alt"></i>Economique</div> 
-           <div class="child"><i class="fas fa-child"></i>Familial</div> 
-           <div class="heart"><i class="fas fa-heart"></i> Romantique</div> 
-           <div class="dog" ><i class="fas fa-dog"></i>Animaux autorisés</div> 
+        <!--FILTRES-->
+        <section>
+          <div id="filtres">
+            <a class="titre">Filtres</a>
+            <div class="block-economique">
+              <a class="filtres-money" href="#"
+                ><i class="fas fa-money-bill-wave-alt"></i>Économique</a
+              >
+            </div>
+            <div class="block-familial">
+              <a class="filtres-child" href="#"
+                ><i class="fas fa-child"></i>Familial</a
+              >
+            </div>
+            <div class="block-romantique">
+              <a class="filtres-heart" href="#"
+                ><i class="fas fa-heart"></i> Romantique</a
+              >
+            </div>
+            <div class="block-animaux">
+              <a class="filtres-dog" href="#"
+                ><i class="fas fa-dog"></i>Animaux autorisés</a
+              >
+            </div>
           </div>
-      </section>
-    </main>
+        </section>
+        <br />
+
+        <!--INFO-->
+        <div class="info">
+          <div><i class="fas fa-info"></i></div>
+          Plus de 500 logements sont disponibles dans cette ville
+        </div>
+
+        <!--HEBERGEMENT À MARSEILLE -->
+        <section></section>
+      </main>
 
       <!--FOOTER-->
       <footer>
-        <element class="apropos"
-          ><h1>A propos</h1>
+        <div class="apropos">
+          <h1>A propos</h1>
           <ul>
             <li>
               <a href="#">Fonctionnement du site</a>
@@ -74,10 +99,10 @@
               <a href="#">Données et confidentialité</a>
             </li>
           </ul>
-        </element>
+        </div>
 
-        <element class="noshebergements"
-          ><h1>Nos Hébergements</h1>
+        <div class="noshebergements">
+          <h1>Nos Hébergements</h1>
           <ul>
             <li>
               <a href="#">Charte qualité</a>
@@ -87,10 +112,10 @@
               <a href="#">Soumettre votre hotel</a>
             </li>
           </ul>
-        </element>
+        </div>
 
-        <element class="asistance"
-          ><h1>Asistance</h1>
+        <div class="asistance">
+          <h1>Asistance</h1>
           <ul>
             <li>
               <a href="#">Centre d'aide</a>
@@ -100,7 +125,7 @@
               <a href="#">Nous contacter</a>
             </li>
           </ul>
-        </element>
+        </div>
       </footer>
     </div>
   </body>

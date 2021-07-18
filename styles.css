@@ -33,10 +33,10 @@ header {
   font-weight: bold;
 }
 
-nav { 
+nav {
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;   
+  justify-content: flex-end;
 }
 
 .menu {
@@ -53,7 +53,7 @@ nav {
   width: 50%;
   text-align: center;
   padding-top: 20px;
-  }
+}
 
 .menu-element:hover {
   border-top: 1px solid #0065fc;
@@ -63,6 +63,16 @@ nav {
 a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
+}
+
+.a,
+.nav-element {
+  font-weight: bold;
+}
+
+.a,
+.menu-element {
   font-weight: bold;
 }
 
@@ -78,31 +88,27 @@ h2 {
 }
 /* BARRE DE RECHERCHE */
 
-
 form {
   display: flex;
   justify-content: space-around;
-  width: 430px; height: 50px;
+  width: 430px;
+  height: 50px;
 }
 
-.fas {
-  background-color: #DEEBFF;
-  border: none;
-}
-
-.fas:nth-of-type(1){
+.fas:nth-of-type(1) {
   width: 50px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  color: black;
+  border: none;
 }
-  
 
 input:nth-of-type(1) {
   width: 234px;
-  border-top:  #DEEBFF solid;
-  border-bottom: #DEEBFF solid;
-  border-left: #DEEBFF solid;
-  border-right: #DEEBFF solid;
+  border-top: #deebff solid;
+  border-bottom: #deebff solid;
+  border-left: #deebff solid;
+  border-right: #deebff solid;
   border-width: 1px;
 }
 
@@ -117,49 +123,96 @@ input:nth-of-type(2) {
   border-bottom-right-radius: 15px;
 }
 
-
 input {
   font-family: "raleway";
   text-align: left;
-  font-size:  medium;
+  font-size: medium;
   font-weight: bold;
 }
 
 /* FILTRES */
 
-.ulfiltres {
+#filtres {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 844px;
+  height: 50px;
   align-items: center;
-  height: 50px; width: 930px;
+}
+
+.a,
+.filtres-money,
+.filtres-child,
+.filtres-heart,
+.filtres-dog {
   font-weight: bold;
-  font-size: large;
 }
 
-.money {
-
+.a,
+.titre {
+  font-weight: bold;
 }
 
-.child {
-
+.fa-money-bill-wave-alt:before,
+.fa-child:before,
+.fa-heart:before,
+.fa-dog:before {
+  color: #0065fc;
 }
 
-.heart {
-
+.filtres-money:hover {
+  color: white;
+  background-color: #0065fc;
 }
 
-.dog {
-  
+.filtres-child:hover {
+  color: white;
+  background-color: #0065fc;
 }
 
+.filtres-heart:hover {
+  color: white;
+  background-color: #0065fc;
+}
+
+.filtres-dog:hover {
+  color: white;
+  background-color: #0065fc;
+}
+
+/*INFO*/
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: baseline;
+  width: 500px;
+  height: 20px;
+  font-size: 0.88em;
+}
+
+.fas-fa:before {
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  font-size: 13px;
+}
+
+/*HEBERGEMENT À MARSEILLE*/
 
 /* FOOTER */
 
 footer {
   height: 20%;
-  background-color: #DEEBFF;  
-  bottom: 0; left: 0; right: 0;
-  position: absolute;  
+  background-color: #deebff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -167,21 +220,41 @@ footer {
 }
 
 .apropos {
-  height: 67%;
+  height: 69%;
   padding-left: 2.5%;
-  font-size: 0.8em;
+  padding-bottom: 0%;
+  font-size: small;
+}
+
+.h1,
+.apropos {
+  font-size: small;
 }
 
 .noshebergements {
   padding-right: 10%;
-  font-size: 0.8em;
+  height: 69%;
+  padding-left: 2.5%;
+  padding-bottom: 0%;
+  font-size: small;
+}
+.h1,
+.noshebergements {
+  font-size: small;
 }
 
 .asistance {
   padding-right: 20%;
-  font-size: 0.8em;
+  height: 69%;
+  padding-left: 2.5%;
+  padding-bottom: 0%;
+  font-size: small;
 }
 
+.h1,
+.asistance {
+  font-size: small;
+}
 
 ul {
   padding: 0;
@@ -189,7 +262,10 @@ ul {
 
 li {
   list-style-type: none;
-  font-size: 0.9em;  
+  font-size: small;
 }
 
-
+a,
+li {
+  font-weight: normal;
+}
