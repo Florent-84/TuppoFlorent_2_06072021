@@ -63,7 +63,6 @@ nav {
 a {
   text-decoration: none;
   color: black;
-  font-weight: bold;
 }
 
 .a,
@@ -95,11 +94,10 @@ form {
   height: 50px;
 }
 
-.fas:nth-of-type(1) {
+.fas,.fa-map-marker-alt:nth-of-type(1) {
   width: 50px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  color: black;
   border: none;
 }
 
@@ -136,12 +134,90 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 844px;
-  height: 50px;
+  height: 50px; width: 980px;
   align-items: center;
 }
 
+.fa-money-bill-wave-alt,.fa-child,.fa-dog,.fa-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 30px; 
+  background-color: #DEEBFF ;
+}
+
+.block-economique {
+  display: flex;
+  height: 48px;  width: 194px;
+  border-top: solid; border-width: 2px;
+  color: #F2F2F2; 
+  border-bottom: solid;
+  border-right: solid;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.block-familial {
+  display: flex;
+  height: 48px;  width: 150px;
+  border-top: solid; border-width: 2px;
+  color: #F2F2F2; 
+  border-bottom: solid;
+  border-right: solid;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.block-romantique {
+  display: flex;
+  height: 48px;  width: 182px;
+  border-top: solid; border-width: 2px;
+  color: #F2F2F2; 
+  border-bottom: solid;
+  border-right: solid;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.block-animaux {
+  display: flex;
+  height: 48px;  width: 240px;
+  border-top: solid; border-width: 2px;
+  color: #F2F2F2; 
+  border-bottom: solid;
+  border-right: solid;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.block-economique:hover,.block-familial:hover,.block-romantique:hover,.block-animaux:hover {
+  background-color: #0065FC; 
+}
+
+.texteconomique:hover,.textfamilial:hover,.textromantique:hover,.textanimaux:hover {
+  color: white;
+}
+
+.texteconomique,.textfamilial,.textromantique,.textanimaux {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+
 .a,
+.titre,
 .filtres-money,
 .filtres-child,
 .filtres-heart,
@@ -149,10 +225,7 @@ input {
   font-weight: bold;
 }
 
-.a,
-.titre {
-  font-weight: bold;
-}
+
 
 .fa-money-bill-wave-alt:before,
 .fa-child:before,
@@ -161,45 +234,32 @@ input {
   color: #0065fc;
 }
 
-.filtres-money:hover {
-  color: white;
-  background-color: #0065fc;
-}
-
-.filtres-child:hover {
-  color: white;
-  background-color: #0065fc;
-}
-
-.filtres-heart:hover {
-  color: white;
-  background-color: #0065fc;
-}
-
-.filtres-dog:hover {
-  color: white;
-  background-color: #0065fc;
-}
-
 /*INFO*/
 
 .info {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
   align-content: baseline;
-  width: 500px;
-  height: 20px;
-  font-size: 0.88em;
+  height: 40px;
+  font-size: 0.93em;
 }
 
-.fas-fa:before {
+.fa-info:nth-of-type(1) {
+  font-size: 12px;
   display: flex;
-  height: 20px;
   justify-content: center;
   align-items: center;
   color: #0065fc;
-  font-size: 13px;
+  height: 20px; width: 20px;
+}
+
+.fa-info {
+  border: solid; 
+  border-color: #F2F2F2;
+  border-radius: 20px;
+  border-width: 1px;
+  margin-right: 10px;
 }
 
 /*HEBERGEMENT À MARSEILLE*/
@@ -263,9 +323,4 @@ ul {
 li {
   list-style-type: none;
   font-size: small;
-}
-
-a,
-li {
-  font-weight: normal;
 }
