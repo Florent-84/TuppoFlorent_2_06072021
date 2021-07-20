@@ -259,28 +259,86 @@ input {
 }
 
 /*HEBERGEMENT À MARSEILLE*/
-
-.block-les-hébèrgements{
+#les-hotels {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
-  background-color: #DEEBFF;
-  width: 900px; height: 650px;
+  height: 640px; 
+}
+
+#les-hébergements {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
   border-radius: 15px; 
 }
 
-#titre-Hébergements-à-Marseille {
+#titre-hébergements{
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+
+#photo-hébergements {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 1310px; height: 680px;
+  
+}
+
+figure {
+  border: solid;
+  border-radius: 20px;
+  width: 350px; height: 250px;
+  border-color: white;
+  background-color: white;
+  border-width: 3px;
+}
+
+img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+figcaption :nth-child(1) {
+  height: 5px;
+}
+
+h3 {
+  font-weight: bold 2em
+}
+
+.aubergelacannebière,.hotelduport,.hotellesmouettes,.hoteldelamer,.aubergelepanier,.hotelchezamina {
   font-size: small;
 }
 
-.block-aubergelacannebière,.block-hotelduport,.block-hotellesmouettes,.block-hoteldelamer,.block-aubergelepanier,.block-chezamina { 
-  border: solid;
-  display: flex;
-  width: 230px; height: 200px;
-  border-radius: 15px;
+.aubergelacannebière:hover,.hotelduport:hover,.hotellesmouettes:hover,.hoteldelamer:hover,.aubergelepanier:hover,.hotelchezamina:hover {
+  -webkit-transform: scale(1.1);
 }
+
+.texte:nth-child(1) {
+  margin-left: 5%;
+}
+
+.etoiles {
+  display: flex;
+  width: 70px;
+  height: 50px;
+  justify-content: center;
+  align-content: center;
+  margin-left: 17px;
+  margin-top: 37px;
+}
+
+.full:before {
+  color: #0065fc;
+}
+.full_grey:before {
+  color:#deebff
+}
+
+
 
 /* FOOTER */
 
@@ -290,7 +348,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
