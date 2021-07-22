@@ -88,7 +88,6 @@ h2 {
 
 form {
   display: flex;
-  justify-content: space-around;
   width: 430px;
   height: 50px;
 }
@@ -98,14 +97,13 @@ form {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   border: none;
+  cursor: pointer;
 }
 
 input:nth-of-type(1) {
   width: 234px;
-  border-top: #deebff solid;
-  border-bottom: #deebff solid;
-  border-left: #deebff solid;
-  border-right: #deebff solid;
+  border: #deebff solid;
+  padding-left: 10px;
   border-width: 1px;
 }
 
@@ -118,6 +116,7 @@ input:nth-of-type(2) {
   border: none;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  cursor: pointer;
 }
 
 input {
@@ -133,136 +132,108 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 50px; width: 1000px;
+  height: 70px; width: 1000px;
   align-items: center;
+  justify-content: flex-start;
 }
 
-.block-economique {
-  display: flex;
-  height: 48px;  width: 194px;
-  border-top: solid; border-width: 2px;
-  color: #F2F2F2; 
-  border-bottom: solid;
-  border-right: solid;
-  border-bottom-right-radius: 30px;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-
-.block-familial {
-  display: flex;
-  height: 48px;  width: 150px;
-  border-top: solid; border-width: 2px;
-  color: #F2F2F2; 
-  border-bottom: solid;
-  border-right: solid;
-  border-bottom-right-radius: 30px;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-
-.block-romantique {
-  display: flex;
-  height: 48px;  width: 182px;
-  border-top: solid; border-width: 2px;
-  color: #F2F2F2; 
-  border-bottom: solid;
-  border-right: solid;
-  border-bottom-right-radius: 30px;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-
-.block-animaux {
-  display: flex;
-  height: 48px;  width: 240px;
-  border-top: solid; border-width: 2px;
-  color: #F2F2F2; 
-  border-bottom: solid;
-  border-right: solid;
-  border-bottom-right-radius: 30px;
-  border-top-right-radius: 30px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-
-.fa-money-bill-wave-alt,.fa-child,.fa-dog,.fa-heart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48px;
-  margin-right: 15px;
-  border: none;
-  border-radius: 30px; 
-  background-color: #DEEBFF ;
-}
-
-.block-economique:hover,.block-familial:hover,.block-romantique:hover,.block-animaux:hover {
-  background-color: #0065FC; 
-}
-
-.texteconomique:hover,.textfamilial:hover,.textromantique:hover,.textanimaux:hover {
-  color: white;
-}
-
-.texteconomique,.textfamilial,.textromantique,.textanimaux {
-  display: flex;
-  align-items: center;
+.titre {
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.a,
-.titre,
-.filtres-money,
-.filtres-child,
-.filtres-heart,
-.filtres-dog {
-  font-weight: bold;
+.filter-block {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.fa-money-bill-wave-alt:before,
-.fa-child:before,
-.fa-heart:before,
-.fa-dog:before {
-  color: #0065fc;
+.filter-btn {
+display: flex;
+align-items: center;
+margin-left: 20px;
+margin-bottom: 20px;
+border: 2px solid #d9d9d9;
+border-radius: 30px;
+height: 50px;
+border-left: none;
+}
+
+.filter-btn:hover {
+background-color: #0065fc;
+cursor: pointer;
+}
+
+.buble-icon {
+background-color: #deebff;
+width: 50px;
+line-height: 50px;
+border-radius: 50%;
+}
+      
+.icon {
+color: #0065fc;
+font-size: 16px;
+margin-left: 3px;
+}
+      
+.icon-eco {
+padding: 0px 12px
+}
+
+.fas.fa-heart:before {
+margin-left: 2.6px;
+}
+
+.fas.fa-child:before {
+margin-left: 2.8px;
+}
+      
+.filter-link {
+text-decoration: none;
+color: #000;
+margin-left: 15px;
+margin-right: 15px;
+font-weight: bold;
+font-size: 16px;
+}
+
+.filter-link:hover{
+color: white;
 }
 
 /*INFO*/
 
 .info {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: baseline;
-  height: 40px;
-  font-size: 0.93em;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+align-content: baseline;
+height: 40px;
+font-size: 0.93em;
 }
 
 .fa-info:nth-of-type(1) {
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #0065fc;
-  height: 20px; width: 20px;
+font-size: 12px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #0065fc;
+height: 20px; width: 20px;
 }
 
 .fa-info {
-  border: solid; 
-  border-color: #F2F2F2;
-  border-radius: 20px;
-  border-width: 1px;
-  margin-right: 10px;
+border: solid; 
+border-color: #F2F2F2;
+border-radius: 20px;
+border-width: 1px;
+margin-right: 10px;
 }
 
 /*HEBERGEMENT À MARSEILLE*/
 #les-hotels {
   display: flex;
   flex-wrap: wrap;
-  height: 640px; 
+  height: 800px; width: 1020px;
 }
 
 #les-hébergements {
@@ -271,34 +242,36 @@ input {
   flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 15px; 
-  width: 100%; 
+  width: 200%; 
   height:800px;
+}
+
+#les-hébergements:nth-child(2) {
+  width: 100%; height: 200px;
 }
 
 #titre-hébergements{
   font-size: 1em;
   font-weight: bold;
-  margin-left: 2.5%;
-  margin-top: 1%;
+  margin-left: 4.5%;
+  margin-top: 2.5%;
 }
 
-#photo-hébergements {
+#photos-hébergements {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  width: 1100px; height: 700px; 
+  width: 1000px; height: 700px; 
 }
 
 figure {
   border: solid;
   border-radius: 20px;
-  width: 315px; height: 240px;
+  width: 280px; height: 240px;
   border-color: white;
   background-color: white;
   border-width: 5px;
   box-shadow:  4px 4px rgb(230, 230, 230);
-  ; 
-
 }
 
 img {
@@ -312,7 +285,7 @@ figcaption :nth-child(1) {
 
 .aubergelacannebière,.hotelduport,.hotellesmouettes,.hoteldelamer,.aubergelepanier,.hotelchezamina {
   font-size: small; 
-  width: 350px;
+  width: 320px;
 }
 
 .aubergelacannebière:hover,.hotelduport:hover,.hotellesmouettes:hover,.hoteldelamer:hover,.aubergelepanier:hover,.hotelchezamina:hover {
@@ -349,6 +322,74 @@ figcaption :nth-child(1) {
 }
 
 /* LES PLUS POPULAIRES */
+
+#populaires {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 800px; width: 720px;
+  margin-left: 70px;
+}
+
+#titre-plus-populaires {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px; height: 130px; 
+  margin-left: 10px;
+}
+
+.fas.fa-chart-line{
+  display: flex;
+  align-items: flex-end;
+  height: 20px; 
+}
+
+#logo-fleche {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 130px; width: 400px;
+  margin-right: 20px;
+}
+
+.fas.fa-chart-line:hover {
+  color: #0065fc;
+}
+
+.hotel-lesoleildumatin,.au-coeur-de-l-eau,.hotel-toutbleuetblanc {
+  display: flex;
+  flex-direction: column;
+  width: 500px; height: 150px;
+  border: solid;
+}
+
+#populaire {
+  height: 150px; width: 450px;
+}
+
+
+#photos-populaires {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+flex-direction: column;
+
+}
+
+#populaire-figure {
+  border: solid;
+  border-radius: 20px;
+  width: 350px;
+  height: 120px;
+  border-color: white;
+  background-color: white;
+  border-width: 5px;
+  box-shadow: 4px 4px rgb(230 230 230);
+}
+
 
 
 /* FOOTER */

@@ -39,7 +39,7 @@
               id="ville,pays"
               placeholder="Marseille, France"
             />
-            <input type="submit" value="Rechercher" />
+            <input type="submit" value="Rechercher"/>
           </form>
         </section>
         <br />
@@ -49,30 +49,39 @@
           <div id="filtres">
             <a class="titre">Filtres</a>
 
-            <div class="block-economique">
-              <a class="filtres-money">
-                <i class="fas fa-money-bill-wave-alt"></i></a
-              ><a class="texteconomique"href="#">Économique</a>
+             <div class="filter-block">
+              <div class="filter-btn">
+               <div class="buble-icon">
+                <i class="fas fa-money-bill-wave icon icon-eco"></i>
             </div>
-
-            <div class="block-familial">
-              <a class="filtres-child">
-                <i class="fas fa-child"></i></a
-              ><a class="textfamilial"href="#">Familial</a>
+            <a href="#" class="filter-link">Économique</a>
             </div>
-
-            <div class="block-romantique">
-              <a class="filtres-heart">
-                <i class="fas fa-heart"></i></a
-              ><a class="textromantique"href="#">Romantique</a>
-            </div>
-
-            <div class="block-animaux">
-              <a class="filtres-dog">
-                <i class="fas fa-dog"></i></a
-              ><a class="textanimaux"href="#">Animaux autorisés</a>
             </div>
             
+            <div class="filter-block">
+              <div class="filter-btn">
+                <div class="buble-icon">
+                 <i class="fas fa-child icon icon-eco"></i>
+              </div>
+              <a href="#" class="filter-link">Familial</a>
+              </div>
+              
+              <div class="filter-block">
+                <div class="filter-btn">
+                  <div class="buble-icon">
+                   <i class="fas fa-heart icon icon-eco"></i>
+                </div>
+                <a href="#" class="filter-link">Romantique</a>
+                </div>
+
+                <div class="filter-block">
+                  <div class="filter-btn">
+                    <div class="buble-icon">
+                     <i class="fas fa-dog icon icon-eco"></i>
+                  </div>
+                  <a href="#" class="filter-link">Animaux autorisés</a>
+                  </div>
+                   
           </div>
         </section>
         <br />
@@ -89,10 +98,10 @@
              <article id="les-hébergements">
                  <div id="titre-hébergements"><h1>Hébergements à Marseille</h1></div> 
 
-        <section id="photo-hébergements">  
+        <section id="photos-hébergements">  
           <a href="#" class="aubergelacannebière">
             <figure>
-              <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" width=315px; height=160px;  alt="Auberge la Cannebière">
+              <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" width=280px; height=160px;  alt="Auberge la Cannebière">
                  <figcaption>
                   <div class="texte">
                     <h3>Auberge la Cannebière</h3>
@@ -113,7 +122,7 @@
           
           <a href="#" class="hotelduport">
             <figure>
-              <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" width=315px; height=160px;  alt="Hôtel du port">
+              <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" width=280px; height=160px;  alt="Hôtel du port">
                  <figcaption>
                   <div class="texte">
                     <h3>Hôtel du port</h3>
@@ -134,7 +143,7 @@
 
           <a href="#" class="hotellesmouettes">
             <figure>
-              <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" width=315px; height=160px;  alt="Hôtel les mouettes">
+              <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" width=280px; height=160px;  alt="Hôtel les mouettes">
                  <figcaption>
                   <div class="texte">
                     <h3>Hôtel les mouettes</h3>
@@ -155,7 +164,7 @@
 
           <a href="#" class="hoteldelamer">
             <figure>
-              <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" width=315px; height=160px;  alt="Hôtel de la mer">
+              <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" width=280px; height=160px;  alt="Hôtel de la mer">
                  <figcaption>
                   <div class="texte">
                     <h3>Hôtel de la mer</h3>
@@ -176,7 +185,7 @@
 
           <a href="#" class="aubergelepanier">
             <figure>
-              <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" width=315px; height=160px;  alt="Auberge le panier">
+              <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" width=280px; height=160px;  alt="Auberge le panier">
                  <figcaption>
                   <div class="texte">
                     <h3>Auberge le panier</h3>
@@ -197,7 +206,7 @@
 
           <a href="#" class="hotelchezamina">
             <figure>
-              <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" width=315px; height=160px;  alt="Hôtel chez Amina">
+              <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" width=280px; height=160px;  alt="Hôtel chez Amina">
                  <figcaption>
                   <div class="texte">
                     <h3>Hôtel chez Amina</h3>
@@ -216,16 +225,78 @@
             </figure>
           </a>
 
-          <a href="#" id="afficherplus"><h3>Afficher plus</h3></div></a> 
+          <a href="#" id="afficherplus"><h3>Afficher plus</h3></a> 
         </section>
+      
+    
 
        <!--LES PLUS POPULAIRES-->
-       
-           </article>    
-      </div>
+      <aside id="populaires">
+        <div id="titre-plus-populaires"><h1>Les plus populaires</h1></div>
+        <div id="logo-fleche">
+        <a href="#"><i class="fas fa-chart-line" aria-hidden="true"></i></a></div>
+
+        <div id="photos-populaires">
+          <a href="#" class="hotel-lesoleildumatin">
+            <figure id="populaire">
+              <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" width=140px; height=120px; alt="Le soleil du matin">
+              <figcaption>
+                <div class="texte">
+                  <h3> Hôtel le soleil du matin</h3><p>Nuit à partir de 128€</p>
+                </div>
+                <div class="etoiles">
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                 </div>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a href="#" class="au-coeur-de-l-eau">
+            <figure id="populaire">
+              <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" width=140px; height=120px; alt="Au coeur de l'eau chambres d'hôtes">
+              <figcaption>
+                <div class="texte">
+                  <h3>Au coeur de l'eau chambres d'hôtes</h3><p>Nuit à partir de 71€</p>
+                </div>
+                <div class="etoiles">
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                  <i class="fas fa-star full_grey" aria-hidden="true"></i>
+                 </div>
+              </figcaption>
+            </figure>
+          </a>
+
+          <a href="#" class="hotel-toutbleuetblanc">
+            <figure id="populaire">
+              <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" width=140px; height=120px; alt="Hôtel Tout bleu et Blanc">
+              <figcaption>
+                <div class="texte">
+                  <h3> Hôtel Tout bleu et Blanc</h3><p>Nuit à partir de 68€</p>
+                </div>
+                <div class="etoiles">
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                  <i class="fas fa-star full" aria-hidden="true"></i>
+                  <i class="fas fa-star full_grey" aria-hidden="true"></i>
+                 </div>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </aside>
+    </article>
+  </div>
       </main>
 
-      <!--FOOTER>
+      <!--FOOTER->
       <footer>
         <div class="apropos">
           <h1>A propos</h1>
