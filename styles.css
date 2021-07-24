@@ -128,6 +128,16 @@ input {
   font-weight: bold;
 }
 
+.fa-map-marker-alt:nth-of-type(1):hover {
+  background-color: #deebff;
+  color: #0065fc;
+}
+
+input:nth-of-type(2):hover {
+  background-color: #deebff;
+  color: #0065fc;
+}
+
 /* FILTRES */
 
 #filtres {
@@ -231,6 +241,7 @@ input {
   border-radius: 20px;
   border-width: 1px;
   margin-right: 10px;
+  cursor: unset;
 }
 
 /*HEBERGEMENT À MARSEILLE*/
@@ -411,6 +422,7 @@ figcaption :nth-child(1) {
 .etoiles {
   display: flex;
 }
+
 /* ACTIVITES A MARSEILLE */
 
 #blockactivités {
