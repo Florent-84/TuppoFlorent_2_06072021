@@ -403,7 +403,6 @@ figcaption :nth-child(1) {
 }
 
 .texte-descriptif {
-  width: 600px;
   display: flex;
 }
 
