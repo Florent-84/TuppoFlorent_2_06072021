@@ -16,10 +16,20 @@
 /* BODY */
 
 #body {
-  width: 95%;
-  height: 2250px;
+  padding-top: 15px;
+  width: 1800px;
+  height: 2100px;
   margin: auto;
   font-family: "raleway", sans-serif;
+}
+
+@media all and (max-width: 1024px)
+{
+  #body:nth-child(5)
+    {
+       display: flex;
+     flex-wrap: wrap;
+    }
 }
 
 /* HEADER/NAVIGATION */
@@ -31,6 +41,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   font-weight: bold;
+  width: 1800px;
 }
 
 nav {
@@ -519,7 +530,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  position: fixed;
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -574,3 +585,12 @@ li {
   list-style-type: none;
   font-size: small;
 }
+
+/* MEDIA QUERIES */
+
+/* destktop */
+
+/* tablette */
+
+/* smartphone */
+
