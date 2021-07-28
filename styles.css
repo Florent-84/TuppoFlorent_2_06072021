@@ -92,7 +92,7 @@ h1 {
   font-size: 1.5em;
 }
 
-h2 {
+.soustitre {
   font-size: 1.05em;
   font-weight: normal;
 }
@@ -161,9 +161,10 @@ input:nth-of-type(2):hover {
   justify-content: flex-start;
 }
 
-.titre {
+.categoriefiltres {
   font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 1.05em;
+  margin-bottom: 35px;
 }
 
 .filter-block {
