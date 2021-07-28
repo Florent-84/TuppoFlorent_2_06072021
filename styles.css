@@ -23,13 +23,11 @@
   font-family: "raleway", sans-serif;
 }
 
-@media all and (max-width: 1024px)
-{
-  #body:nth-child(5)
-    {
-       display: flex;
-     flex-wrap: wrap;
-    }
+@media all and (max-width: 1024px) {
+  #body:nth-child(5) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* HEADER/NAVIGATION */
@@ -279,11 +277,11 @@ input:nth-of-type(2):hover {
   height: 200px;
 }
 
-#titre-hébergements {
-  font-size: 1em;
+.titre-hébergements {
+  font-size: 1.5em;
   font-weight: bold;
   margin-left: 4.5%;
-  margin-top: 2.5%;
+  margin-top: 4.5%;
 }
 
 #photos-hébergements {
@@ -585,13 +583,5 @@ ul {
 li {
   list-style-type: none;
   font-size: small;
+  margin-top: 20px;
 }
-
-/* MEDIA QUERIES */
-
-/* destktop */
-
-/* tablette */
-
-/* smartphone */
-
