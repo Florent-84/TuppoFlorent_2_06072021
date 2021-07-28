@@ -186,6 +186,10 @@ input:nth-of-type(2):hover {
   background-color: #0065fc;
 }
 
+.filter-btn:hover a {
+  color: white;
+}
+
 .buble-icon {
   background-color: #deebff;
   width: 50px;
@@ -212,16 +216,10 @@ input:nth-of-type(2):hover {
 }
 
 .filter-link {
-  text-decoration: none;
-  color: #000;
   margin-left: 15px;
   margin-right: 15px;
   font-weight: bold;
   font-size: 16px;
-}
-
-.filter-link:hover {
-  color: white;
 }
 
 /*INFO*/
@@ -382,8 +380,8 @@ figcaption :nth-child(1) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 720px;
-  height: 120px;
+  width: 645px;
+  height: 73px;
 }
 .titre-plus-populaires:nth-child(1) {
   margin-left: 50px;
@@ -433,9 +431,10 @@ figcaption :nth-child(1) {
 
 #blockactivités {
   display: flex;
-  justify-content: space-between;
-  width: 1790px;
-  height: 720px;
+}
+
+#titreactivites {
+  margin-left: 5px;
 }
 
 figure#premierephoto {
@@ -581,4 +580,10 @@ li {
   list-style-type: none;
   font-size: small;
   margin-top: 20px;
+}
+
+/**/
+@media only screen and (max-width: 600px) {
+
+
 }
