@@ -364,8 +364,6 @@ figcaption :nth-child(1) {
 /* LES PLUS POPULAIRES */
 
 #populaires {
-  display: flex;
-  flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 15px;
   height: 800px;
@@ -373,7 +371,7 @@ figcaption :nth-child(1) {
   margin-left: 70px;
 }
 
-.elements-photos-populaires {
+#elements-photos-populaires {
   display: flex;
   flex-direction: column;
   margin-left: 5px;
@@ -388,7 +386,6 @@ figcaption :nth-child(1) {
   height: 120px;
 }
 .titre-plus-populaires:nth-child(1) {
-  display: flex;
   margin-left: 50px;
 }
 
