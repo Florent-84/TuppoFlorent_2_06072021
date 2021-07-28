@@ -396,7 +396,7 @@ figcaption :nth-child(1) {
 
 .logo-fleche :nth-child(2) {
   display: flex;
-  margin-right: 60px;
+  margin-right: 65px;
 }
 
 .fas.fa-chart-line {
