@@ -142,6 +142,10 @@ input:nth-of-type(2):hover {
   color: #0065fc;
 }
 
+button.loupe {
+  display: none;
+}
+
 /* FILTRES */
 
 #filtres {
@@ -663,6 +667,7 @@ li {
   }
 
   button.loupe {
+    display:-webkit-inline-box;
     width: 55px;
     height: 55px;
     border-radius: 15px;
