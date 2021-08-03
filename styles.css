@@ -729,7 +729,6 @@ li {
     border: 2px solid #d9d9d9;
     border-radius: 65px;
     height: 50px;
-    width: 150;
     border-left: none;
   }
 
@@ -782,7 +781,6 @@ li {
   #populaires {
     width: 375px;
     height: 620px;
-    background-color: none;
     margin: 0;
     border-radius: 0;
   }
@@ -802,7 +800,7 @@ li {
     background-color: white;
   }
 
-  h1.logo-fleche.titre-plus-populaires {
+  h2.logo-fleche.titre-plus-populaires {
     width: 340px;
     height: 60px;
     margin-bottom: 0;
