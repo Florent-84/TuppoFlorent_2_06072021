@@ -1329,7 +1329,7 @@ li {
   /*footer*/
   footer {
     width: 817px;
-    height: 550px;
+    height: 250px;
     margin-left: -10px;
     margin-bottom: -10px;
   }
@@ -1350,11 +1350,275 @@ li {
   }
 
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+
+  /* BODY */
+  #body {
+    width: auto;
+    height: 1600px;
+  }
+
+ /* HEADER/NAV */
+  header {
+    width: auto;
+    margin:0px;
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+
+  nav {
+    width: auto;
+  }
+
+  .menu {
+    width: 300px;
+  }
+
+ /* FILTRES */
+  #filtres {
+    justify-content: flex-start;
+    width: 850px;
+    margin-left: 20px;
+  }
+
+  .filter-btn {
+    height: 45px;
+  }
+  
+  .buble-icon {
+    width: 45px;
+    line-height: 45px;
+  }
+  
+  .icon-eco {
+    padding: 0px 10px;
+  } 
+
+  .info {
+margin-left: 20px;
+  }
+
+ /* HEBERGEMENTS */
+#les-hotels {
+  height: 400px;
+}
+
+ #les-hébergements {
+  flex-direction: column;
+  height: 580px;
+  margin-left: 40px;
+  padding-right: 40px;
+}
+
+#les-hébergements:nth-child(2) {
+  width: 100%;
+  height: 200px;
+}
+
+.titre-hébergements {
+  font-size: 1.3em;
+  margin-left: 4.5%;
+  margin-top: 4.5%;
+  margin-bottom: 5px;
+}
+
+#photos-hébergements {
+  width: 800px;
+  height: 500px;
+  padding-left: 0px;
+}
+
+.aubergelacannebière, .hotelduport, .hotellesmouettes, .hoteldelamer, .aubergelepanier, .hotelchezamina {
+  font-size: small;
+  width: 250px;
+}
+
+figure {
+width: 220px;
+}
+
+figure img {
+  width: 220px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+figcaption .etoiles {
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+#les-hotels #populaires {
+  order: 0;
+}
+
+h2.logo-fleche.titre-plus-populaires {
+  width: 335px;
+  font-size: 1.3em;
+  margin-top: 30px;
+  margin-left: 0px;
+  height: 15px;
+}
+
+.titre-plus-populaires:nth-child(1) {
+  margin-left: 3px;
+  margin-bottom: 0px;
+}
+
+.populaire {
+  width: 300px;
+  height: 120px;
+  margin: -2px;
+}
+
+#populaires {
+  border-radius: 15px;
+  height: 580px;
+  width: 345px;
+  margin-left: 30px;
+}
+
+.texte-descriptif img {
+  height: 120px;
+  width: 120px;
+}
+
+.texte-descriptif .etoiles {
+  height: 140px;
+  height: 100px;
+  margin: 20px;
+  margin-left: 5px;
+}
+
+.populaire .etoiles {
+  font-size: 13px;
+
+}
+
+#elements-photos-populaires {
+  height: 530px;
+  width: 300px;
+  justify-content: space-between;
+}
+
+/* ACTIVITES A MARSEILLE */
+
+#blockactivités {
+  flex-direction: row;
+  width: 1200px;
+  padding-left: 25px;
+}
+
+#titreactivites {
+  margin-left: 5px;
+}
+
+#titreactivites h1 {
+  margin-top: 200px;
+  margin-left: 30px;
+  margin-bottom: -30px;
+}
+
+figure#premierephoto {
+  width: 250px;
+  height: 450px;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.vieuxport img {
+  height: 400px;
+  width: 250px;
+}
+
+.blockvieuxport {
+  color: #f2f2f2;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: fit-content;
+  margin-right: 35px;
+}
+
+.blockfort {
+  height: 300px;
+  width: 250px;
+  margin-top: 0px;
+margin-left: 30px;
+}
+
+
+#deuxiemephoto img {
+  height: 200px;
+}
+
+figure#deuxiemephoto {
+  width: 250px;
+  height: 250px;
+  margin: 0px;
+  border: none;
+  box-shadow: 2px 2px 10px 2px rgb(230 230 230);
+}
+
+.blockiles img {
+  width: 250px;
+  height: 100px;
+}
+
+figure#troisiemephoto {
+  width: 250px;
+  height: 150px;
+  margin-left: 0;
+  margin-top: 50px;
+  border: none;
+  box-shadow: 2px 2px 10px 2px rgb(230 230 230);
+}
+
+figure#quatriemephoto {
+  width: 250px;
+  height: 450px;
+  margin-left: 30px;
+  margin-top: 0px;
+  border: none;
+  box-shadow: 2px 2px 10px 2px rgb(230 230 230);
+}
+
+#quatriemephoto img {
+  height: 400px;
+  width: 250px;
+}
+
+figure#cinquiemephoto {
+  width: 250px;
+  height: 200px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+#cinquiemephoto img {
+  width: 250px;
+  height: 150px;
+}
+figure#sixiemephoto {
+  width: 250px;
+  height: 200px;
+  margin-top: 0;
+}
+
+#sixiemephoto img {
+  width: 250px;
+  height: 150px
+}
+
+/* FOOTER */
+footer {
+  width: auto;
+  height: 220px;
+}
+
 }
