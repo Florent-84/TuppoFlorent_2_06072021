@@ -585,7 +585,7 @@ li {
 
 @media only screen and (max-width: 600px) {
   #body {
-    width: 375px;
+    width: 385px;
     height: 4260px;
   }
   /*header*/
@@ -599,17 +599,17 @@ li {
   nav {
     display: flex;
     flex-direction: column-reverse;
-    width: 350px;
+    width: 385px;
     height: 58px;
   }
 
   .menu {
-    width: 365px;
+    width: 385px;
     height: 60px;
     padding-bottom: 10px;
     border-bottom: solid 3px;
     color: #deebff;
-    margin-right: -8px;
+    /*margin-right: -8px;*/
   }
 
   a.menu-element {
@@ -1285,8 +1285,9 @@ li {
   }
 
   .blockparcnational {
-    width: 710px;
-    height: 200px;
+    width: auto;
+    height: auto;
+    margin: 0px;
   }
 
   figure#quatriemephoto {
@@ -1329,7 +1330,7 @@ li {
   /*footer*/
   footer {
     width: 817px;
-    height: 250px;
+    height: 230px;
     margin-left: -10px;
     margin-bottom: -10px;
   }
@@ -1349,6 +1350,7 @@ li {
     padding-right: 70px;
   }
 }
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   /* BODY */
@@ -1360,6 +1362,7 @@ li {
   /* HEADER/NAV */
   header {
     width: auto;
+    margin-right: 20px;
   }
 
   nav {
@@ -1406,7 +1409,7 @@ li {
   #les-hébergements {
     flex-direction: column;
     height: 580px;
-    margin-left: 40px;
+    margin-left: 25px;
     padding-right: 40px;
   }
 
@@ -1447,16 +1450,18 @@ li {
   }
 
   h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .texte-descriptif {
     height: auto;
-}
+  }
 
-.soleil, .bleuetblanc, .coeurdeleau {
-  margin-left: 12px;
-}
+  .soleil,
+  .bleuetblanc,
+  .coeurdeleau {
+    margin-left: 12px;
+  }
 
   figcaption .etoiles {
     margin-left: 20px;
@@ -1499,11 +1504,12 @@ li {
 
   .texte-descriptif .etoiles {
     margin-left: 5px;
-    margin-top: 25px
+    margin-top: 25px;
   }
 
   .populaire .etoiles {
     font-size: 13px;
+    margin-top: 15px;
   }
 
   #elements-photos-populaires {
@@ -1516,12 +1522,13 @@ li {
 
   #blockactivités {
     flex-direction: row;
-    width: auto;
-    padding-left: 25px;
+    justify-content: space-around;
+    padding: 0px;
   }
 
   #titreactivites {
-    margin-left: 5px;
+    margin-left: -10px;
+    width: auto;
   }
 
   #titreactivites h1 {
@@ -1531,80 +1538,64 @@ li {
   }
 
   figure#premierephoto {
-    width: 250px;
+    width: auto;
     height: 450px;
-    margin-left: 0;
-    margin-top: 0;
   }
 
   .vieuxport img {
-    height: 400px;
+    height: 390px;
     width: 250px;
   }
 
   .blockvieuxport {
-    color: #f2f2f2;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    width: fit-content;
-    margin-right: 35px;
+    width: auto;
+    height: 450px;
+    margin: 0px;
+    flex-direction: row;
   }
 
   .blockfort {
-    height: 300px;
-    width: 250px;
-    margin-top: 0px;
-    margin-left: 10px;
+    width: auto;
+    height: 450px;
+    margin: 0px;
   }
 
   #deuxiemephoto img {
-    height: 200px;
+    height: 190px;
   }
 
   figure#deuxiemephoto {
-    width: 250px;
+    width: auto;
     height: 250px;
-    margin: 0px;
-    border: none;
-    box-shadow: 2px 2px 10px 2px rgb(230 230 230);
   }
 
   .blockiles img {
     width: 250px;
-    height: 100px;
+    height: 110px;
   }
 
   figure#troisiemephoto {
-    width: 250px;
-    height: 150px;
-    margin-left: 0;
-    margin-top: 50px;
-    border: none;
-    box-shadow: 2px 2px 10px 2px rgb(230 230 230);
+    width: auto;
+    height: 170px;
   }
 
   figure#quatriemephoto {
     width: 250px;
+    flex-direction: row;
     height: 450px;
-    margin-left: 15px;
+    margin-right: 0px;
     margin-top: 0px;
-    border: none;
-    box-shadow: 2px 2px 10px 2px rgb(230 230 230);
   }
 
   #quatriemephoto img {
-    height: 400px;
+    height: 390px;
     width: 250px;
   }
 
   figure#cinquiemephoto {
-    width: 250px;
-    height: 200px;
-    margin-top: 0;
-    margin-bottom: 50px;
-    margin-right: 15px;
+    width: auto;
+    height: 210px;
+    margin: auto;
   }
 
   #cinquiemephoto img {
@@ -1612,10 +1603,8 @@ li {
     height: 150px;
   }
   figure#sixiemephoto {
-    width: 250px;
-    height: 200px;
-    margin-top: 0;
-    margin-right: 15px;
+    width: auto;
+    height: 210px;
   }
 
   #sixiemephoto img {
@@ -1623,18 +1612,19 @@ li {
     height: 150px;
   }
 
-  /* FOOTER */
-  footer {
-    width: auto;
-    height: 220px;
-  }
+/* FOOTER */
+footer {
+  width: auto;
+  height: 220px;
+  margin: 0px;
+}
 
-  .apropos {
-    padding-left:40px;
-  }
+.apropos {
+  padding-left: 30px;
+}
 
-  .asistance {
-    padding-right: 270px;
+.asistance {
+  padding-right: 270px;
 }
 
 }
