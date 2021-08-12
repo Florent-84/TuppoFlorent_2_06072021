@@ -603,19 +603,20 @@ li {
     height: 58px;
   }
 
+  .nav-element {
+    margin-right: 20px;
+  }
+
   .menu {
-    width: 385px;
+    width: 400px;
     height: 60px;
     padding-bottom: 10px;
     border-bottom: solid 3px;
     color: #deebff;
-    /*margin-right: -8px;*/
   }
 
   a.menu-element {
     padding-top: 40px;
-    width: 190px;
-    height: 20px;
   }
 
   a.menu-element:hover {
@@ -1043,12 +1044,12 @@ li {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 992px) {
   /* BODY */
 
   #body {
-    width: 768px;
-    height: 4300px;
+    width: 100%;
+    height: 3250px;
   }
 
   header {
@@ -1076,25 +1077,30 @@ li {
 
   #filtres {
     flex-wrap: wrap;
-    justify-content: space-around;
-    height: auto;
-    width: 500px;
-    margin-left: 130px;
+    justify-content: center;
+    width: 100%;
   }
+
+  .filter-link {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.filter-btn {
+  margin-left: 12px;
+}
 
   /*les plus populaires*/
   #les-hotels {
-    margin-left: -17px;
-    width: 760px;
-    height: 2050px;
+    width: 100%;
+    height: 1550px;
   }
 
   #populaires {
-    width: 780px;
-    padding-left: 30px;
-    margin-left: 9px;
-    height: 790px;
-    border-radius: 0;
+    width: 100%;
+    margin-left: 0px;
   }
 
   #les-hotels #populaires {
@@ -1102,7 +1108,8 @@ li {
   }
 
   #elements-photos-populaires {
-    width: 780px;
+    width: 100%;
+    margin: 0px;
   }
 
   #les-hébergements {
@@ -1112,17 +1119,12 @@ li {
   }
 
   .titre-hébergements {
-    margin: 50px;
-  }
-
-  #photos-hébergements {
-    padding-left: 18px;
-    height: 1350px;
+    margin-bottom: 80px;
+    margin-top: 50px;
   }
 
   h2.logo-fleche.titre-plus-populaires {
-    width: 680px;
-    margin-left: 40px;
+    margin-left: 70px;
   }
 
   .titre-plus-populaires:nth-child(1) {
@@ -1139,8 +1141,7 @@ li {
   }
 
   .populaire {
-    width: 650px;
-    margin-left: 35px;
+    margin: 0px 65px 20px 60px;
   }
   .texte-descriptif {
     height: 140px;
@@ -1175,39 +1176,18 @@ li {
     height: 0px;
   }
 
-  .titre-hébergements {
-    margin-left: 10%;
-    margin-top: 10%;
-    margin-bottom: 3%;
-  }
-
   #photos-hébergements {
-    padding-left: 40px;
-    width: 375px;
-    height: 1350px;
+  justify-content: center;
   }
 
   figure {
-    border: solid;
-    border-radius: 20px;
-    width: 660px;
-    height: 180px;
-    border-color: white;
-    background-color: white;
-    border-width: 5px;
+    margin: 13px;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
-    margin: 0;
-    margin-left: 35px;
-    margin-top: 15px;
-  }
-
-  figure img {
-    width: 660px;
-    height: 110px;
   }
 
   figcaption .etoiles {
-    margin-left: 45px;
+    margin-left: 25px;
+    margin-top: 40px;
   }
 
   figcaption p {
@@ -1218,6 +1198,10 @@ li {
   figcaption h3 {
     margin: 0.4em;
     margin-left: auto;
+  }
+
+  #afficherplus {
+    display: none;
   }
 
   /*activités à Marseille*/
@@ -1232,112 +1216,99 @@ li {
   }
 
   #blockactivités {
-    display: flex;
-    flex-direction: column;
-    padding-left: 60px;
-    margin-top: 50px;
+    flex-flow: wrap;
+    justify-content: space-around;
   }
 
   .blockvieuxport {
-    width: 710px;
-    height: 200px;
+    width: 340px;
+    height: 220px;
+    margin: 0px;
   }
 
   figure#premierephoto {
-    width: 670px;
-    height: 200px;
+    width: 340px;
+    height: 220px;
+    margin: 10px 10px 10px 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
   .blockvieuxport img {
-    width: 670px;
-    height: 145px;
+    width: 340px;
+    height: 160px;
   }
 
   .blockfort {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    height: 450px;
+    height: 480px;
+    margin: 0px;
   }
 
   figure#deuxiemephoto {
-    width: 670px;
-    height: 200px;
-    margin: 0px;
+    width: 340px;
+    height: 220px;
+    margin: 10px 10px 10px 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
   .blockfort img {
-    width: 670px;
-    height: 145px;
+    width: 340px;
+    height: 160px;
   }
 
   figure#troisiemephoto {
-    width: 670px;
-    height: 200px;
-    margin-left: 0;
-    margin-top: 30px;
+    width: 340px;
+    height: 220px;
+    margin: 10px 10px 10px 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
   .blockparcnational {
-    width: auto;
-    height: auto;
+    width: 340px;
+    height: 220px;
     margin: 0px;
   }
 
   figure#quatriemephoto {
-    width: 670px;
-    height: 200px;
-    margin-left: 0;
-    margin-top: 10px;
+    width: 340px;
+    height: 220px;
+    margin: 10px 10px 10px 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
   .blockparcnational img {
-    width: 670px;
-    height: 145px;
+    width: 340px;
+    height: 160px;
   }
 
   figure#cinquiemephoto {
-    width: 670px;
-    height: 200px;
-    margin-left: 0;
-    margin-top: 40px;
+    width: 340px;
+    height: 220px;
+    margin: 10px 10px 10px 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
   .notredamedelagarde img {
-    width: 670px;
-    height: 145px;
+    width: 340px;
+    height: 160px;
   }
 
   figure#sixiemephoto {
-    width: 670px;
-    height: 200px;
-    margin-left: 0;
-    margin-top: 30px;
+    width: 340px;
+    height: 220px;
+    margin: 10px 10px 10px 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
   /*footer*/
   footer {
-    width: 817px;
+    width: 100%;
     height: 230px;
-    margin-left: -10px;
-    margin-bottom: -10px;
-  }
-
-  .apropos {
-    padding-left: 70px;
-    padding-right: 0px;
   }
 
   .noshebergements {
@@ -1347,284 +1318,7 @@ li {
   }
 
   .asistance {
-    padding-right: 70px;
+    padding: 30px;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  /* BODY */
-  #body {
-    width: auto;
-    height: 1600px;
-  }
-
-  /* HEADER/NAV */
-  header {
-    width: auto;
-    margin-right: 20px;
-  }
-
-  nav {
-    width: auto;
-  }
-
-  .menu {
-    width: 300px;
-  }
-
-  .titreprincipal h1 {
-    font-size: 20px;
-  }
-
-  /* FILTRES */
-  #filtres {
-    justify-content: flex-start;
-    width: 850px;
-    margin-left: 20px;
-  }
-
-  .filter-btn {
-    height: 45px;
-  }
-
-  .buble-icon {
-    width: 45px;
-    line-height: 45px;
-  }
-
-  .icon-eco {
-    padding: 0px 10px;
-  }
-
-  .info {
-    margin-left: 20px;
-  }
-
-  /* HEBERGEMENTS */
-  #les-hotels {
-    height: 400px;
-  }
-
-  #les-hébergements {
-    flex-direction: column;
-    height: 580px;
-    margin-left: 25px;
-    padding-right: 40px;
-  }
-
-  #les-hébergements:nth-child(2) {
-    width: 100%;
-    height: 200px;
-  }
-
-  .titre-hébergements {
-    font-size: 1.3em;
-    margin-left: 4.5%;
-    margin-top: 4.5%;
-    margin-bottom: 5px;
-  }
-
-  #photos-hébergements {
-    width: 800px;
-    height: 500px;
-    padding-left: 0px;
-  }
-
-  .aubergelacannebière,
-  .hotelduport,
-  .hotellesmouettes,
-  .hoteldelamer,
-  .aubergelepanier,
-  .hotelchezamina {
-    font-size: small;
-    width: 250px;
-  }
-
-  figure {
-    width: 220px;
-  }
-
-  figure img {
-    width: 220px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  .texte-descriptif {
-    height: auto;
-  }
-
-  .soleil,
-  .bleuetblanc,
-  .coeurdeleau {
-    margin-left: 12px;
-  }
-
-  figcaption .etoiles {
-    margin-left: 20px;
-    font-size: 13px;
-  }
-
-  #les-hotels #populaires {
-    order: 0;
-  }
-
-  h2.logo-fleche.titre-plus-populaires {
-    width: auto;
-    font-size: 1.3em;
-    margin-top: 30px;
-    margin-left: 0px;
-    height: 15px;
-  }
-
-  .titre-plus-populaires:nth-child(1) {
-    margin-left: 3px;
-    margin-bottom: 0px;
-  }
-
-  .populaire {
-    width: auto;
-    height: 120px;
-    margin: 10px 30px 0px 0px;
-  }
-
-  #populaires {
-    border-radius: 15px;
-    width: auto;
-    margin-left: 30px;
-  }
-
-  .texte-descriptif img {
-    height: 120px;
-    width: 110px;
-  }
-
-  .texte-descriptif .etoiles {
-    margin-left: 5px;
-    margin-top: 25px;
-  }
-
-  .populaire .etoiles {
-    font-size: 13px;
-    margin-top: 15px;
-  }
-
-  #elements-photos-populaires {
-    height: 530px;
-    width: 300px;
-    justify-content: space-between;
-  }
-
-  /* ACTIVITES A MARSEILLE */
-
-  #blockactivités {
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0px;
-  }
-
-  #titreactivites {
-    margin-left: -10px;
-    width: auto;
-  }
-
-  #titreactivites h1 {
-    margin-top: 200px;
-    margin-left: 30px;
-    margin-bottom: -30px;
-  }
-
-  figure#premierephoto {
-    width: auto;
-    height: 450px;
-  }
-
-  .vieuxport img {
-    height: 390px;
-    width: 250px;
-  }
-
-  .blockvieuxport {
-    width: auto;
-    height: 450px;
-    margin: 0px;
-    flex-direction: row;
-  }
-
-  .blockfort {
-    width: auto;
-    height: 450px;
-    margin: 0px;
-  }
-
-  #deuxiemephoto img {
-    height: 190px;
-  }
-
-  figure#deuxiemephoto {
-    width: auto;
-    height: 250px;
-  }
-
-  .blockiles img {
-    width: 250px;
-    height: 110px;
-  }
-
-  figure#troisiemephoto {
-    width: auto;
-    height: 170px;
-  }
-
-  figure#quatriemephoto {
-    width: 250px;
-    flex-direction: row;
-    height: 450px;
-    margin-right: 0px;
-    margin-top: 0px;
-  }
-
-  #quatriemephoto img {
-    height: 390px;
-    width: 250px;
-  }
-
-  figure#cinquiemephoto {
-    width: auto;
-    height: 210px;
-    margin: auto;
-  }
-
-  #cinquiemephoto img {
-    width: 250px;
-    height: 150px;
-  }
-  figure#sixiemephoto {
-    width: auto;
-    height: 210px;
-  }
-
-  #sixiemephoto img {
-    width: 250px;
-    height: 150px;
-  }
-
-/* FOOTER */
-footer {
-  width: auto;
-  height: 220px;
-  margin: 0px;
-}
-
-.apropos {
-  padding-left: 30px;
-}
-
-.asistance {
-  padding-right: 270px;
-}
-
-}
