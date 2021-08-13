@@ -17,8 +17,8 @@
 
 #body {
   padding-top: 10px;
-  width: auto;
-  height: 1080px;
+  width: 100%;
+  height: 2100px;
   font-family: "raleway", sans-serif;
 }
 
@@ -32,6 +32,11 @@ header {
   align-items: center;
   font-weight: bold;
   width: auto;
+}
+
+ #logo img {
+  width:97px;
+  height:45px;
 }
 
 nav {
@@ -258,6 +263,11 @@ button.loupe {
   width: 1020px;
 }
 
+#photos-hébergements img {
+  width:280px;
+  height:160px;
+}
+
 #les-hébergements {
   display: flex;
   flex-wrap: wrap;
@@ -367,6 +377,13 @@ figcaption :nth-child(1) {
   margin-left: 70px;
 }
 
+#populaires img {
+  width:200px;
+  height:170px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 0px;
+}
+
 #elements-photos-populaires {
   display: flex;
   flex-direction: column;
@@ -430,6 +447,33 @@ figcaption :nth-child(1) {
 
 #blockactivités {
   display: flex;
+  width: 100%;
+}
+
+#premierephoto img, #quatriemephoto img {
+  width:330px;
+  height:640px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#deuxiemephoto img {
+  width:330px;
+  height:340px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#troisiemephoto img {
+  width:330px;
+  height:195px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#cinquiemephoto img, #sixiemephoto img {
+  width:330px;
+  height:270px;
 }
 
 #titreactivites {
@@ -437,10 +481,10 @@ figcaption :nth-child(1) {
 }
 
 figure#premierephoto {
-  width: 350px;
-  height: 705px;
-  margin-left: 0;
-  margin-top: 0;
+  width: 330px;
+  height: 715px;
+  margin: 0;
+  border: none;
 }
 
 figure#premierephoto:hover,
@@ -462,26 +506,25 @@ figure#sixiemephoto:hover {
 }
 
 .blockvieuxport {
+  height: 715px;
   color: #f2f2f2;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: fit-content;
-  margin-right: 35px;
 }
 
 figure#deuxiemephoto {
-  width: 350px;
-  height: 405px;
-  margin-top: 0;
+  width: 330px;
+  height: 415px;
+  margin: 0px;
+  border: none;
 }
 
 .blockfort {
   display: flex;
   flex-direction: column;
   height: 400px;
-  margin-right: 35px;
 }
 
 .blockiles {
@@ -489,42 +532,48 @@ figure#deuxiemephoto {
   flex-direction: column;
 }
 
-.blockparcnational {
-  margin-right: 35px;
+.notredamedelagarde {
+  width: 330px;
+  height: 350px;
+}
+
+.parclongchamp {
+  height: 340px;
 }
 
 figure#troisiemephoto {
-  width: 350px;
+  width: 330px;
   height: 260px;
+  margin: 0px;
+  border: none;
 }
 
 figure#quatriemephoto {
-  width: 350px;
-  height: 705px;
-  margin-top: 0;
+  width: 330px;
+  height: 715px;
+  margin: 0px;
+  border: none;
 }
 
 figure#cinquiemephoto {
-  width: 350px;
+  width: 330px;
   height: 340px;
-  margin-top: 0;
+  margin: 0px;
+  border: none;
 }
 
 figure#sixiemephoto {
-  width: 350px;
+  width: 330px;
   height: 340px;
-  margin-top: 0;
+  margin: 0px;
+  border: none;
 }
 
 /* FOOTER */
 
 footer {
-  height: 40%;
+  height: 230px;
   background-color: #f2f2f2;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -624,6 +673,13 @@ li {
     border-bottom: solid 3px;
     height: 30px;
     color: #0065fc;
+  }
+
+  #populaires img {
+    width:140px;
+    height:140px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0px;
   }
 
   /*titre*/
@@ -770,8 +826,7 @@ li {
   }
   /*les plus populaires*/
   #les-hotels {
-    margin-left: -17px;
-    width: 375px;
+    width: 150%;
     height: 2050px;
   }
 
@@ -868,15 +923,20 @@ li {
   }
 
   #photos-hébergements {
-    padding-left: 18px;
-    width: 375px;
+    width: 150%;
     height: 1350px;
+    justify-content: center;
+  }
+
+  #photos-hébergements img {
+      width: 340px;
+      height: 120px;
   }
 
   figure {
     border: solid;
     border-radius: 20px;
-    width: 330px;
+    width: 340px;
     height: 190px;
     border-color: white;
     background-color: white;
@@ -913,19 +973,19 @@ li {
 
   #blockactivités {
     display: flex;
-    flex-direction: column;
-    width: 375px;
-    padding-left: 16px;
-    margin-top: 30px;
+    flex-wrap: wrap;
+    width: 150%;
+    height: 1300px;
+    justify-content: center;
   }
 
   .blockvieuxport {
-    width: 340px;
+    width: 350px;
     height: 200px;
   }
 
   figure#premierephoto {
-    width: 340px;
+    width: 350px;
     height: 200px;
     margin-left: 0;
     margin-top: 0;
@@ -933,20 +993,39 @@ li {
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
+  #premierephoto img, #quatriemephoto img {
+    width: 350px;
+    height: 140px;
+  }
+
+  #deuxiemephoto img {
+    width: 350px;
+    height: 140px;
+}
+
+#troisiemephoto img {
+  width: 350px;
+  height: 140px;
+}
+
+#cinquiemephoto img, #sixiemephoto img {
+  width: 350px;
+  height: 140px;
+}
+
   .blockvieuxport img {
-    width: 340px;
-    height: 145px;
+    width: 350px;
+    height: 140px;
   }
 
   .blockfort {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    height: 450px;
+    height: 200px;
   }
 
   figure#deuxiemephoto {
-    width: 340px;
+    width: 350px;
     height: 200px;
     margin-left: 0;
     margin-top: 0;
@@ -959,25 +1038,33 @@ li {
     height: 145px;
   }
 
+  .blockiles {
+    width: 350px;
+    height: 200px;
+}
+
   figure#troisiemephoto {
-    width: 340px;
+    width: 350px;
     height: 200px;
     margin-left: 0;
-    margin-top: 30px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
   .blockparcnational {
-    width: 340px;
+    width: 350px;
     height: 200px;
   }
 
+  .notredamedelagarde {
+    width: 350px;
+    height: 200px;
+}
+
   figure#quatriemephoto {
-    width: 340px;
+    width: 350px;
     height: 200px;
     margin-left: 0;
-    margin-top: 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
@@ -987,11 +1074,14 @@ li {
     height: 145px;
   }
 
+  .parclongchamp {
+    height: 200px;
+  }
+
   figure#cinquiemephoto {
-    width: 340px;
+    width: 350px;
     height: 200px;
     margin-left: 0;
-    margin-top: 40px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
@@ -1002,10 +1092,9 @@ li {
   }
 
   figure#sixiemephoto {
-    width: 340px;
+    width: 350px;
     height: 200px;
     margin-left: 0;
-    margin-top: 30px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
@@ -1015,10 +1104,8 @@ li {
     left: 0;
     right: 0;
     position: relative;
-    width: 403px;
+    width: 100%;
     height: 520px;
-    margin-left: -10px;
-    margin-bottom: -10px;
   }
 
   .apropos {
@@ -1043,29 +1130,32 @@ li {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and max-width 992px) */
 @media only screen and (min-width: 600px) and (max-width: 992px) {
+
   /* BODY */
 
   #body {
     width: 100%;
-    height: 3250px;
+    height: 3050px;
   }
 
   header {
-    width: 700px;
-    margin-top: 10px;
-    margin-left: 30px;
+    width: 100%;
   }
 
   .menu {
     display: flex;
-    width: 560px;
+    width: 75%;
   }
 
   .nav {
     padding-top: 0px;
   }
+
+  .nav-element {
+    margin-right: 20px;
+}
 
   .titreprincipal {
     margin-left: 20px;
@@ -1077,8 +1167,9 @@ li {
 
   #filtres {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
+    height: auto;
   }
 
   .filter-link {
@@ -1121,10 +1212,12 @@ li {
   .titre-hébergements {
     margin-bottom: 80px;
     margin-top: 50px;
+    margin-left: 70px;
   }
 
   h2.logo-fleche.titre-plus-populaires {
-    margin-left: 70px;
+    margin-left: 60px;
+    width: 88%;
   }
 
   .titre-plus-populaires:nth-child(1) {
@@ -1141,7 +1234,8 @@ li {
   }
 
   .populaire {
-    margin: 0px 65px 20px 60px;
+    width: 85%;
+    margin: 0px 65px 20px 50px;
   }
   .texte-descriptif {
     height: 140px;
@@ -1206,59 +1300,72 @@ li {
 
   /*activités à Marseille*/
 
-  #titreactivites {
-    margin-left: 30px;
-  }
-
   #titreactivites h1 {
     margin-top: 200px;
-    margin-left: 30px;
+    margin-left: 35px;
   }
 
   #blockactivités {
-    flex-flow: wrap;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .blockiles {
+    height: 240px;
+    order:4;
+  }
+
+  .parclongchamp {
+    width: 350px;
+    height: 240px;
+    order:6;
   }
 
   .blockvieuxport {
-    width: 340px;
+    width: 350px;
     height: 220px;
     margin: 0px;
   }
 
+  #premierephoto img, #quatriemephoto img {
+    width: 330px;
+    height: 160px;
+}
+
   figure#premierephoto {
-    width: 340px;
+    width: 330px;
     height: 220px;
     margin: 10px 10px 10px 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
-  .blockvieuxport img {
-    width: 340px;
+  #deuxiemephoto img {
+    width: 330px;
     height: 160px;
-  }
+}
 
   .blockfort {
-    height: 480px;
+    height: 240px;
     margin: 0px;
   }
 
   figure#deuxiemephoto {
-    width: 340px;
+    width: 330px;
     height: 220px;
     margin: 10px 10px 10px 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
-  .blockfort img {
-    width: 340px;
+  #troisiemephoto img {
+    width: 330px;
     height: 160px;
-  }
+}
 
   figure#troisiemephoto {
-    width: 340px;
+    width: 330px;
     height: 220px;
     margin: 10px 10px 10px 10px;
     border: none;
@@ -1266,31 +1373,34 @@ li {
   }
 
   .blockparcnational {
-    width: 340px;
-    height: 220px;
     margin: 0px;
   }
 
+  .notredamedelagarde {
+     width: 350px; 
+     height: 240px; 
+}
+
   figure#quatriemephoto {
-    width: 340px;
+    width: 330px;
     height: 220px;
     margin: 10px 10px 10px 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
-  }
-
-  .blockparcnational img {
-    width: 340px;
-    height: 160px;
   }
 
   figure#cinquiemephoto {
-    width: 340px;
+    width: 330px;
     height: 220px;
     margin: 10px 10px 10px 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
+
+  #cinquiemephoto img, #sixiemephoto img {
+    width: 330px;
+    height: 160px;
+}
 
   .notredamedelagarde img {
     width: 340px;
@@ -1298,7 +1408,7 @@ li {
   }
 
   figure#sixiemephoto {
-    width: 340px;
+    width: 330px;
     height: 220px;
     margin: 10px 10px 10px 10px;
     border: none;
