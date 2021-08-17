@@ -15,8 +15,12 @@
 
 /* BODY */
 
+body {
+  margin: 0;
+}
+
 #body {
-  margin: -10px 40px 50px 40px;
+  margin: 0px 40px 50px 40px;
   font-family: "raleway", sans-serif;
 }
 
@@ -27,8 +31,8 @@
 }
 
 #logo img {
-  width:97px;
-  height:45px;
+  width: 97px;
+  height: 45px;
 }
 
 header {
@@ -153,6 +157,10 @@ button.loupe {
 
 /* FILTRES */
 
+#les-filtres {
+  display: flex;
+}
+
 #filtres {
   margin-top: 10px;
   display: flex;
@@ -166,7 +174,7 @@ button.loupe {
 .categoriefiltres {
   font-weight: bold;
   font-size: 1.05em;
-  margin-bottom: 35px;
+  margin-top: 25px;
 }
 
 .filter-block {
@@ -262,8 +270,8 @@ button.loupe {
 }
 
 #photos-hébergements img {
-  width:250px;
-  height:120px;
+  width: 250px;
+  height: 120px;
 }
 
 #les-hébergements {
@@ -302,7 +310,7 @@ button.loupe {
 
 figure {
   border: solid;
-  margin: 0px; 
+  margin: 0px;
   border-radius: 20px;
   width: 250px;
   height: 200px;
@@ -323,10 +331,15 @@ figcaption :nth-child(1) {
 }
 
 figcaption {
-  height:40px;
+  height: 40px;
 }
 
-.aubergelacannebière, .hotelduport, .hotellesmouettes, .hoteldelamer, .aubergelepanier, .hotelchezamina {
+.aubergelacannebière,
+.hotelduport,
+.hotellesmouettes,
+.hoteldelamer,
+.aubergelepanier,
+.hotelchezamina {
   font-size: 14px;
   width: 260px;
   height: 220px;
@@ -403,7 +416,8 @@ figcaption {
   height: 620px;
 }
 
-.titre-plus-populaires, .logo-fleche {
+.titre-plus-populaires,
+.logo-fleche {
   display: flex;
   font-size: 21px;
   justify-content: space-between;
@@ -413,7 +427,9 @@ figcaption {
   margin: 18px 26px 7px 53px;
 }
 
-.hotel-lesoleildumatin, .au-coeur-de-l-eau ,.hotel-toutbleuetblanc {
+.hotel-lesoleildumatin,
+.au-coeur-de-l-eau,
+.hotel-toutbleuetblanc {
   margin: -35px 0px 20px 0px;
 }
 
@@ -451,7 +467,9 @@ figcaption {
   height: 140px;
 }
 
-.soleil, .bleuetblanc, .coeurdeleau {
+.soleil,
+.bleuetblanc,
+.coeurdeleau {
   margin-left: 10px;
   height: auto;
   width: auto;
@@ -475,10 +493,11 @@ figcaption {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
-#premierephoto img, #quatriemephoto img {
+#premierephoto img,
+#quatriemephoto img {
   width: 330px;
   height: 410px;
   border-top-left-radius: 15px;
@@ -486,21 +505,22 @@ figcaption {
 }
 
 #deuxiemephoto img {
-  width:330px;
+  width: 330px;
   height: 200px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
 #troisiemephoto img {
-  width:330px;
+  width: 330px;
   height: 90px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
-#cinquiemephoto img, #sixiemephoto img {
-  width:330px;
+#cinquiemephoto img,
+#sixiemephoto img {
+  width: 330px;
   height: 145px;
 }
 
@@ -553,7 +573,7 @@ figure#deuxiemephoto {
 
 .blockfort {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   width: 330px;
   height: 270px;
 }
@@ -672,19 +692,23 @@ li {
 /* EXTRA SMALL DEVICE (PHONES, 600PX AND DOWN) */
 
 @media only screen and (max-width: 600px) {
+  body {
+    margin: 0px;
+  }
+
   #body {
-    height: 4280px;
+    height: 4180px;
     margin: auto;
   }
 
-  #logo img {
-    height: 45px;
-}
+  #logo {
+    padding: 30px 0px 0px 15px;
+  }
 
   /*header*/
   header {
     width: 100%;
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   nav {
@@ -692,7 +716,7 @@ li {
     flex-wrap: wrap-reverse;
     width: 100%;
     height: 60px;
-}
+  }
 
   .nav-element {
     margin-right: 20px;
@@ -707,7 +731,6 @@ li {
     color: #deebff;
   }
 
-  
   a.menu-element {
     width: 100%;
     padding-top: 40px;
@@ -723,20 +746,22 @@ li {
   #populaires img {
     width: 120px;
     height: 120px;
-    border-bottom-left-radius: 15px;
-    border-top-right-radius: 0px;
-}
+  }
 
-.nuitàpartirde {
-  margin-left: 20px;
-  height: 35px;
-  font-size: 10px;
-}
+  .nuitàpartirde {
+    margin-left: 20px;
+    height: 35px;
+    font-size: 13px;
+  }
 
   /*titre*/
   h1.titreprincipal {
-    width: 100%;
+    width: 95%;
+    font-size: 24px;
+    margin-left: 15px;
+    margin-top: 30px;
   }
+
   /*barre de recherche*/
   section#barre-de-recherche {
     width: 100%;
@@ -744,16 +769,15 @@ li {
 
   form {
     font-size: 4.5em;
-    width: 100%;
+    width: 96%;
     height: 40px;
   }
 
   .fa-map-marker-alt:nth-of-type(1) {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
     cursor: pointer;
     width: 70px;
     height: 55px;
+    margin-left: 10px;
   }
 
   input:nth-of-type(1) {
@@ -787,62 +811,69 @@ li {
   }
   /*sous-titre*/
   h2.soustitre {
+    margin-left: 15px;
     margin-bottom: 30px;
   }
   /*filtres*/
   h2.categoriefiltres {
-    font-weight: bold;
-    font-size: 1em;
     margin-bottom: 0px;
+    margin-left: 15px;
+    margin-top: 30px;
+  }
+
+  #les-filtres {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #filtres {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    height: 250px;
-    width: 100%;
-    padding-top: 10px;
-}
+    flex-direction: row;
+    justify-content: space-between;
+    height: 185px;
+    width: 98%;
+  }
 
   .filter-block:nth-child(3) {
-    align-self: flex-end;
-    position: absolute;
-    margin-bottom: 90px;
-    margin-right: 10px;
+    height: auto;
   }
 
   .filter-block:nth-child(2) {
-    width: 90px;
+    width: 155px;
     height: auto;
   }
 
   .filter-block {
     width: auto;
+    height: auto;
   }
   .filter-btn {
-    margin-left: 0px;
+    margin-left: 10px;
     margin-bottom: 0px;
     border: 2px solid #d9d9d9;
     border-left: none;
   }
 
-  a.filter-link {
-    font-size: 1em;
+  .filter-link {
+    margin-left: 10px;
+    margin-right: 15px;
+    font-weight: bold;
   }
 
   i.fas.fa-money-bill-wave {
-    margin: 2px;
-    font-size: 18px;
-    margin-left: 4px;
+    font-size: 16px;
   }
 
   i.fa-heart {
-    font-size: 18px;
+    font-size: 17px;
+  }
+
+  .fas.fa-heart:before {
+    margin-left: 1px;
   }
 
   .icon {
-    font-size: 22px;
+    font-size: 19px;
+    margin-top: 0px;
   }
 
   .fa-info:nth-of-type(1) {
@@ -852,6 +883,7 @@ li {
     color: #0065fc;
     margin-bottom: 20px;
     margin-left: 15px;
+    margin-top: 15px;
   }
 
   .fa-info::before {
@@ -859,22 +891,31 @@ li {
   }
   /*info*/
   .info {
-    height: 60px;
-    width: 100%;
-    font-size: 0.9em;
-}
+    align-items: center;
+    margin-right: 10px;
+    width: 95%;
+  }
 
   /*les plus populaires*/
   #les-hotels {
     width: 100%;
-    height: 2150px;
+    height: 2010px;
   }
 
   #populaires {
     width: 100%;
-    height: 620px;
+    height: 500px;
+    padding-top: 30px;
     margin: 0;
     border-radius: 0;
+  }
+
+  #elements-photos-populaires {
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 477px;
   }
 
   #les-hotels #populaires {
@@ -888,8 +929,11 @@ li {
   }
 
   h2.logo-fleche.titre-plus-populaires {
-    width: 80%;
+    width: 88%;
+    font-size: 20px;
+    justify-content: space-between;
     margin: 0px;
+    margin-bottom: 10px;
   }
 
   .titre-plus-populaires:nth-child(1) {
@@ -905,27 +949,38 @@ li {
     justify-content: flex-end;
   }
 
+  .hotel-lesoleildumatin,
+  .au-coeur-de-l-eau,
+  .hotel-toutbleuetblanc {
+    margin: 0px;
+    width: 85%;
+    margin-right: 10px;
+  }
+
   .populaire {
     width: 100%;
     height: 120px;
-}
+  }
 
-#populaires h3 {
-  font-size: 14px;
-  margin-left: 20px;
-}
+  .soleil,
+  .bleuetblanc,
+  .coeurdeleau {
+    margin: 0px;
+  }
 
-.populaire .etoiles {
-  font-size: 12px;
-  margin-top: 7px;
-}
+  #populaires h3 {
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .populaire .etoiles {
+    font-size: 12px;
+    margin-top: 25px;
+  }
 
   .texte-descriptif {
-    height: 110px;
-  }
-  .texte-descriptif img {
-    height: 140px;
-    width: 140px;
+    width: 100%;
+    height: auto;
   }
 
   .etoiles {
@@ -937,12 +992,22 @@ li {
     font-size: 16px;
   }
 
+  #afficherplus {
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 10px;
+  }
   /*hébergements à Marseille*/
 
-  .aubergelacannebière, .hotelduport, .hotellesmouettes, .hoteldelamer, .aubergelepanier, .hotelchezamina {
+  .aubergelacannebière,
+  .hotelduport,
+  .hotellesmouettes,
+  .hoteldelamer,
+  .aubergelepanier,
+  .hotelchezamina {
     font-size: small;
     width: 100%;
-}
+  }
 
   #les-hébergements {
     display: flex;
@@ -953,10 +1018,6 @@ li {
     height: 0px;
   }
 
-  #titreactivites {
-    margin-left: 17px;
-  }
-
   .titre-hébergements {
     display: flex;
     justify-content: flex-start;
@@ -964,22 +1025,22 @@ li {
     font-weight: bold;
     margin-left: 5%;
     margin-bottom: 5%;
-}
+  }
 
   #photos-hébergements {
     width: 100%;
-    height: 1350px;
+    height: 1380px;
   }
 
   #photos-hébergements img {
-      width: 100%;
-      height: 120px;
+    width: 100%;
+    height: 120px;
   }
 
   figure {
     border: solid;
     border-radius: 20px;
-    width: 98%;
+    width: 97%;
     height: 190px;
     border-color: white;
     background-color: white;
@@ -988,16 +1049,10 @@ li {
     margin: 0;
   }
 
-  figure img {
-    width: 330px;
-    height: 120px;
-  }
-
   figcaption .etoiles {
-    margin-left: 25px;
-    font-size: 13px;
+    margin-left: 19px;
+    font-size: 12px;
     height: 15px;
-    margin-bottom: 2px;
   }
 
   figcaption p {
@@ -1012,21 +1067,27 @@ li {
 
   /*activités à Marseille*/
 
+  #titreactivites {
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+
   .blockvieuxport {
     width: 100%;
     height: 200px;
   }
 
   figure#premierephoto {
-    width: 100%;
+    width: 95%;
     height: 200px;
-    margin-left: 0;
-    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     border: none;
-    box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
+    box-shadow: 2px 2px 10px 2px rgb(230 230 230);
   }
 
-  #premierephoto img, #quatriemephoto img {
+  #premierephoto img,
+  #quatriemephoto img {
     width: 100%;
     height: 140px;
   }
@@ -1034,17 +1095,18 @@ li {
   #deuxiemephoto img {
     width: 100%;
     height: 140px;
-}
+  }
 
-#troisiemephoto img {
-  width: 100%;
-  height: 140px;
-}
+  #troisiemephoto img {
+    width: 100%;
+    height: 140px;
+  }
 
-#cinquiemephoto img, #sixiemephoto img {
-  width: 100%;
-  height: 140px;
-}
+  #cinquiemephoto img,
+  #sixiemephoto img {
+    width: 100%;
+    height: 140px;
+  }
 
   .blockvieuxport img {
     width: 350px;
@@ -1060,9 +1122,9 @@ li {
   }
 
   figure#deuxiemephoto {
-    width: 100%;
+    width: 95%;
     height: 200px;
-    margin-left: 0;
+    margin-left: 10px;
     margin-top: 0;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
@@ -1075,13 +1137,13 @@ li {
 
   .blockiles {
     width: 100%;
-  padding-top: 20px;
-}
+    padding-top: 20px;
+  }
 
   figure#troisiemephoto {
-    width: 100%;
+    width: 95%;
     height: 200px;
-    margin-left: 0;
+    margin-left: 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
@@ -1096,12 +1158,12 @@ li {
     width: 100%;
     height: 200px;
     padding-top: 20px;
-}
+  }
 
   figure#quatriemephoto {
-    width: 100%;
+    width: 95%;
     height: 200px;
-    margin-left: 0;
+    margin-left: 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
@@ -1117,9 +1179,9 @@ li {
   }
 
   figure#cinquiemephoto {
-    width: 100%;
+    width: 95%;
     height: 200px;
-    margin-left: 0;
+    margin-left: 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
@@ -1130,9 +1192,9 @@ li {
   }
 
   figure#sixiemephoto {
-    width: auto;
+    width: 95%;
     height: 200px;
-    margin-left: 0;
+    margin-left: 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
@@ -1168,14 +1230,20 @@ li {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and max-width 992px) */
-@media only screen and (min-width: 600px) and (max-width: 992px) {
-
+/* Small devices (portrait tablets and large phones, 601px and max-width 992px) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
   /* BODY */
 
+  body {
+    margin: 0px;
+  }
+
   #body {
-    width: 100%;
-    height: 3050px;
+    margin: 0px;
+  }
+
+  #logo img {
+    margin-left: 20px;
   }
 
   header {
@@ -1183,9 +1251,8 @@ li {
   }
 
   .menu {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
+    width: 50%;
+    justify-content: space-around;
   }
 
   .nav {
@@ -1194,17 +1261,21 @@ li {
   }
 
   .nav-element {
-    margin-right: 20px;
-}
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-top: 58px;
+  }
 
-.menu-element {
-  border-top: 2px solid transparent;
-  width: 25%;
-  text-align: center;
-}
+  .menu-element {
+    border-top: 2px solid transparent;
+    width: 50%;
+    text-align: center;
+  }
 
   .titreprincipal {
+    width: auto;
     margin-left: 20px;
+    margin-top: 50px;
   }
 
   #barre-de-recherche {
@@ -1214,8 +1285,15 @@ li {
   #filtres {
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
+    width: 89%;
     height: auto;
+    margin-left: 5px;
+  }
+
+  .categoriefiltres {
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-left: 20px;
   }
 
   .filter-link {
@@ -1223,20 +1301,25 @@ li {
     margin-right: 5px;
     font-weight: bold;
     font-size: 15px;
-}
+  }
 
-.filter-btn {
-  margin-left: 12px;
-}
+  .filter-btn {
+    margin-left: 12px;
+  }
+
+  .info {
+    margin-left: 15px;
+  }
 
   /*les plus populaires*/
   #les-hotels {
     width: 100%;
-    height: 1550px;
+    height: 1390px;
   }
 
   #populaires {
     width: 100%;
+    height: 660px;
     margin-left: 0px;
   }
 
@@ -1245,8 +1328,23 @@ li {
   }
 
   #elements-photos-populaires {
-    width: 100%;
+    height: 620px;
+  }
+
+  .populaire {
+    width: 540px;
+    height: 140px;
+  }
+
+  #populaires img {
+    width: 220px;
+  }
+
+  .hotel-lesoleildumatin,
+  .au-coeur-de-l-eau,
+  .hotel-toutbleuetblanc {
     margin: 0px;
+    width: 584px;
   }
 
   #les-hébergements {
@@ -1256,8 +1354,8 @@ li {
   }
 
   h2.logo-fleche.titre-plus-populaires {
-    margin-left: 40px;
-    width: 90%;
+    margin-left: 20px;
+    width: 550px;
   }
 
   .titre-plus-populaires:nth-child(1) {
@@ -1270,30 +1368,27 @@ li {
   }
 
   .fas.fa-chart-line {
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
 
-  .populaire {
-    width: 85%;
-    margin: 0px 40px 20px 35px;
-}
-
   .texte-descriptif {
-    height: 140px;
+    width: 540px;
   }
   .texte-descriptif img {
     height: 170px;
     width: 240px;
   }
 
+  .soleil,
+  .bleuetblanc,
+  .coeurdeleau {
+    margin-left: 10px;
+    width: 300px;
+  }
+
   .nuitàpartirde {
     font-size: 14px;
     height: 0px;
-  }
-
-  .etoiles {
-    width: 55px;
-    font-size: 15px;
   }
 
   h3 {
@@ -1311,11 +1406,21 @@ li {
     height: 0px;
   }
 
+  .titre-hébergements {
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 57px;
+  }
+
   #photos-hébergements {
     height: auto;
     justify-content: center;
     width: 100%;
-}
+  }
+
+  #photos-hébergements figure {
+    margin: 0px;
+  }
 
   figure {
     margin: 13px;
@@ -1344,117 +1449,131 @@ li {
   /*activités à Marseille*/
 
   #titreactivites h1 {
-    margin-top: 200px;
-    margin-left: 35px;
+    margin-bottom: 30px;
+    margin-left: 57px;
+    width: 90%;
   }
 
   #blockactivités {
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    width: 76%;
+    height: 26%;
+    margin-left: 95px;
+    margin-bottom: 50px;
   }
 
   .blockiles {
-    height: 240px;
-    order:4;
+    width: 280px;
+    height: 230px;
+    padding: 0px;
+    order: 4;
   }
 
   .parclongchamp {
-    width: 350px;
-    height: 240px;
-    order:6;
+    width: 280px;
+    height: 230px;
+    padding: 0px;
+    order: 6;
   }
 
   .blockvieuxport {
-    width: 350px;
-    height: 220px;
+    width: 280px;
+    height: 230px;
     margin: 0px;
+    margin-bottom: 10px;
+    order: -1;
   }
 
-  #premierephoto img, #quatriemephoto img {
-    width: 330px;
+  #premierephoto img,
+  #quatriemephoto img {
+    width: 280px;
     height: 160px;
-}
+  }
 
   figure#premierephoto {
-    width: 330px;
-    height: 220px;
-    margin: 10px 10px 10px 10px;
+    width: 280px;
+    height: 230px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
   #deuxiemephoto img {
-    width: 330px;
+    width: 280px;
     height: 160px;
-}
+  }
 
+  /*BLOKFORT BLOCKILES MEME DIV*/
   .blockfort {
-    height: 240px;
+    width: 280px;
+    height: 470px;
     margin: 0px;
   }
 
   figure#deuxiemephoto {
-    width: 330px;
-    height: 220px;
-    margin: 10px 10px 10px 10px;
+    width: 280px;
+    height: 230px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
   #troisiemephoto img {
-    width: 330px;
+    width: 280px;
     height: 160px;
-}
+  }
 
   figure#troisiemephoto {
-    width: 330px;
-    height: 220px;
-    margin: 10px 10px 10px 10px;
+    width: 280px;
+    height: 230px;
+    margin-top: 10px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
   .blockparcnational {
+    width: 280px;
+    height: 230px;
     margin: 0px;
+    order: -1;
   }
 
+  /*NOTRE DAME DE LA GARDE  PARC LONGCHAMP MEME DIV*/
   .notredamedelagarde {
-     width: 350px; 
-     height: 240px; 
-}
+    width: 280px;
+    height: 470px;
+  }
 
   figure#quatriemephoto {
-    width: 330px;
-    height: 220px;
-    margin: 10px 10px 10px 10px;
+    width: 280px;
+    height: 230px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
   figure#cinquiemephoto {
-    width: 330px;
-    height: 220px;
-    margin: 10px 10px 10px 10px;
+    width: 280px;
+    height: 230px;
     border: none;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
-  #cinquiemephoto img, #sixiemephoto img {
-    width: 330px;
+  #cinquiemephoto img,
+  #sixiemephoto img {
+    width: 280px;
     height: 160px;
-}
+  }
 
   .notredamedelagarde img {
-    width: 340px;
+    width: 280px;
     height: 160px;
   }
 
   figure#sixiemephoto {
-    width: 330px;
-    height: 220px;
-    margin: 10px 10px 10px 10px;
+    width: 280px;
+    height: 230px;
     border: none;
+    margin-top: 10px;
     box-shadow: 2px 2px 10px 2px rgb(230, 230, 230);
   }
 
@@ -1475,3 +1594,8 @@ li {
   }
 }
 
+@media only screen and (min-width: 993px) and (max-width: 1500px) {
+  .filter-btn {
+    margin-left: 10px;
+  }
+}
