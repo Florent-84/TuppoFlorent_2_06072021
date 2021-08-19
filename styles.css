@@ -1230,8 +1230,8 @@ li {
   }
 }
 
-/* Small devices (portrait tablets and large phones, 601px and max-width 992px) */
-@media only screen and (min-width: 601px) and (max-width: 992px) {
+/* Small devices (portrait tablets and large phones, 601px and max-width 1023px) */
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
   /* BODY */
 
   body {
@@ -1493,6 +1493,7 @@ li {
   }
 
   figure#premierephoto {
+    margin: 0px;
     width: 280px;
     height: 230px;
     border: none;
@@ -1594,8 +1595,343 @@ li {
   }
 }
 
-@media only screen and (min-width: 993px) and (max-width: 1500px) {
-  .filter-btn {
+@media only screen and (min-width: 601px) and (max-width: 735px) {
+  #blockactivités {
+    justify-content: center;
+    margin: auto;
+    margin-left: 15px;
+    width: auto;
+  }
+}
+
+/* Large devices ( 1024px and up) */
+@media only screen and (min-width: 1024px) {
+  header {
+    width: 100%;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+  }
+
+  .menu-element {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  nav {
+    font-size: 12px;
+  }
+
+  a.nav-element {
     margin-left: 10px;
+  }
+
+  form {
+    display: flex;
+    width: 330px;
+    height: 40px;
+  }
+
+  input:nth-of-type(1) {
+    width: 230px;
+    font-size: 12px;
+  }
+
+  input:nth-of-type(2) {
+    font-size: 12px;
+    width: 108px;
+  }
+
+  .soustitre {
+    font-size: 0.7em;
+    font-weight: normal;
+  }
+
+  .categoriefiltres {
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-top: 22px;
+  }
+
+  #filtres {
+    width: 65%;
+    height: 35px;
+    justify-content: space-around;
+  }
+
+  .filter-block {
+    height: 35px;
+  }
+
+  .filter-btn {
+    height: 36px;
+    margin-left: 0px;
+  }
+
+  .filter-link {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .buble-icon {
+    background-color: #deebff;
+    width: 40px;
+    line-height: 25px;
+    border-radius: 50%;
+  }
+
+  .icon {
+    color: #0065fc;
+    margin-top: 13px;
+    margin-left: -1px;
+    margin-bottom: 12px;
+  }
+
+  .info {
+    font-size: 10px;
+  }
+
+  .titre-hébergements {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    width: 39%;
+    margin-bottom: -10px;
+    margin-top: 28px;
+  }
+
+  #les-hébergements {
+    height: 420px;
+  }
+
+  #photos-hébergements {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 340px;
+  }
+
+  #photos-hébergements img {
+    width: 150px;
+    height: 75px;
+  }
+
+  .aubergelacannebière,
+  .hotelduport,
+  .hotellesmouettes,
+  .hoteldelamer,
+  .aubergelepanier,
+  .hotelchezamina {
+    font-size: 11px;
+    width: 155px;
+    height: 135px;
+    margin: 10px;
+  }
+
+  #afficherplus h3 {
+    font-size: 13px;
+    margin-left: 47px;
+    margin-top: 0px;
+  }
+
+  #afficherplus {
+    width: 21%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  figure {
+    border: solid;
+    width: 150px;
+    height: 130px;
+    border-color: white;
+    background-color: white;
+    border-width: 3px;
+    box-shadow: 4px 4px rgb(230 230 230);
+  }
+
+  figure h3 {
+    margin: 0px;
+    font-size: 11px;
+  }
+
+  .titre-plus-populaires,
+  .logo-fleche {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 27px;
+    margin-bottom: 7px;
+    margin-left: 30px;
+  }
+
+  #elements-photos-populaires {
+    height: 420px;
+    align-content: flex-start;
+  }
+
+  #populaires {
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    height: 460px;
+    width: 54%;
+    margin-left: 35px;
+  }
+
+  .populaire {
+    width: 250px;
+    height: 90px;
+    margin: 5px 5px 15px 5px;
+  }
+
+  #populaires img {
+    width: 100px;
+    height: 90px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0px;
+  }
+
+  #populaires h3 {
+    font-size: 11px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .fas.fa-chart-line {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .texte-descriptif {
+    display: flex;
+    height: 90px;
+  }
+
+  .nuitàpartirde {
+    margin-left: 5px;
+    font-size: 11px;
+    height: 25px;
+  }
+
+  figcaption {
+    height: 40px;
+    margin-left: 5px;
+  }
+
+  .etoiles {
+    display: flex;
+    width: 50px;
+    margin-left: 5px;
+    margin-top: 32px;
+    font-size: 9px;
+  }
+
+  .populaire .etoiles {
+    font-size: 9px;
+    margin-left: -2px;
+    margin-top: 20px;
+  }
+  .hotel-lesoleildumatin,
+  .au-coeur-de-l-eau,
+  .hotel-toutbleuetblanc {
+    margin: 0px;
+  }
+
+  #blockactivités h3 {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  figure#premierephoto {
+    width: 220px;
+    height: 300px;
+  }
+
+  figure#deuxiemephoto {
+    width: 220px;
+    height: 170px;
+  }
+
+  figure#troisiemephoto {
+    width: 220px;
+    height: 105px;
+  }
+
+  figure#quatriemephoto {
+    width: 220px;
+    height: 300px;
+  }
+
+  figure#cinquiemephoto {
+    width: 220px;
+    height: 138px;
+  }
+
+  figure#sixiemephoto {
+    width: 220px;
+    height: 138px;
+  }
+
+  .blockvieuxport {
+    width: 220px;
+    height: 350px;
+  }
+
+  .blockfort {
+    width: 220px;
+    height: 300px;
+  }
+
+  .blockiles {
+    padding-top: 25px;
+    width: 220px;
+    height: 160px;
+  }
+
+  .notredamedelagarde {
+    width: 220px;
+    height: 220px;
+  }
+
+  .parclongchamp {
+    padding-top: 25px;
+  }
+
+  #premierephoto img,
+  #quatriemephoto img {
+    width: 220px;
+    height: 250px;
+  }
+
+  #deuxiemephoto img {
+    width: 220px;
+    height: 120px;
+  }
+
+  #troisiemephoto img {
+    width: 220px;
+    height: 55px;
+  }
+
+  #cinquiemephoto img,
+  #sixiemephoto img {
+    width: 220px;
+    height: 87px;
+  }
+
+  footer {
+    padding-left: 15px;
   }
 }
