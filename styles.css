@@ -1410,8 +1410,8 @@ li {
   }
 
   figcaption .etoiles {
-    margin-left: 25px;
-    margin-top: 40px;
+    margin-left: 15px;
+    margin-top: 45px;
   }
 
   figcaption p {
@@ -1702,26 +1702,25 @@ li {
     width: 100%;
     margin-bottom: -10px;
     margin-top: 28px;
-    margin-left: 35px;
+    margin-left: 30px;
   }
 
   #les-hébergements {
     height: 420px;
-    width: 100%;
+    width: auto;
   }
 
   #photos-hébergements {
     align-content: center;
     justify-content: space-around;
-    margin-left: 20px;
-    margin-right: 20px;
     height: 340px;
-    width: 93%;
+    width: 95%;
+    margin-left: 15px;
   }
 
   #photos-hébergements img {
-    width: 150px;
-    height: 75px;
+    width: 170px;
+    height: 80px;
   }
 
   .aubergelacannebière,
@@ -1731,14 +1730,14 @@ li {
   .aubergelepanier,
   .hotelchezamina {
     font-size: 11px;
-    width: 155px;
-    height: 135px;
+    width: auto;
+    height: auto;
     margin: 10px;
   }
 
   #afficherplus h3 {
     font-size: 13px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-top: 0px;
   }
 
@@ -1751,7 +1750,7 @@ li {
 
   figure {
     border: solid;
-    width: 150px;
+    width: 170px;
     height: 130px;
     border-color: white;
     background-color: white;
@@ -1780,6 +1779,7 @@ li {
   #elements-photos-populaires {
     height: 420px;
     align-content: flex-start;
+    width: auto;
   }
 
   #photo-hébergements {
@@ -1787,6 +1787,7 @@ li {
   }
 
   #populaires {
+    width: 540px;
     background-color: #f2f2f2;
     border-radius: 15px;
     height: 420px;
@@ -1794,7 +1795,7 @@ li {
   }
 
   .populaire {
-    width: 250px;
+    width: 230px;
     height: 90px;
     margin: 5px 5px 15px 5px;
   }
@@ -1818,11 +1819,6 @@ li {
     justify-content: flex-end;
   }
 
-  .texte-descriptif {
-    display: flex;
-    height: 90px;
-  }
-
   .nuitàpartirde {
     margin-left: 5px;
     font-size: 11px;
@@ -1838,7 +1834,7 @@ li {
     display: flex;
     width: 50px;
     margin-left: 5px;
-    margin-top: 32px;
+    margin-top: 29px;
     font-size: 9px;
   }
 
@@ -1965,7 +1961,7 @@ li {
   }
 
   #les-hébergements {
-    width: 100%;
+    width: 105%;
   }
 
   #photos-hébergements {
@@ -2001,7 +1997,7 @@ li {
   }
 
   .populaire {
-    width: 325px;
+    width: 302px;
     height: 130px;
   }
 
@@ -2060,7 +2056,7 @@ li {
   }
 
   #les-hébergements {
-    width: 100%;
+    width: auto;
   }
 
   #photos-hébergements {
@@ -2150,6 +2146,10 @@ li {
     width: 100%;
   }
 
+  #photos-hébergements {
+    justify-content: space-around;
+  }
+
   #photos-hébergements img {
     width: 250px;
   }
@@ -2169,12 +2169,24 @@ li {
 }
 
 @media only screen and (min-width: 1775px) {
+  .titre-hébergements {
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 50px;
+  }
+
   #les-hébergements {
     width: 100%;
   }
 
   #photos-hébergements img {
     width: 300px;
+  }
+
+  #photos-hébergements {
+    justify-content: space-around;
+    width: 95%;
+    margin-left: 20px;
   }
 
   .aubergelacannebière,
@@ -2186,8 +2198,19 @@ li {
     width: 300px;
   }
 
+  #afficherplus {
+    width: 100%;
+    margin-left: 50px;
+    justify-content: flex-start;
+  }
+
   figure {
     width: 300px;
+  }
+
+  .populaire {
+    width: 485px;
+    height: 140px;
   }
 
   #premierephoto img,
