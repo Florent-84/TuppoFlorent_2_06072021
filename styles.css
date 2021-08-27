@@ -2172,36 +2172,11 @@ li {
   }
 }
 
-@media only screen and (min-width: 1440px) and (max-width: 1520px) {
-  #les-hébergements {
-    width: 100%;
-  }
-}
+
 
 @media only screen and (min-width: 1520px) and (max-width: 1775px) {
   #les-hébergements {
     width: 100%;
-  }
-
-  #photos-hébergements {
-    justify-content: space-around;
-  }
-
-  #photos-hébergements img {
-    width: 290px;
-  }
-
-  .aubergelacannebière,
-  .hotelduport,
-  .hotellesmouettes,
-  .hoteldelamer,
-  .aubergelepanier,
-  .hotelchezamina {
-    width: 290px;
-  }
-
-  figure {
-    width: 290px;
   }
 }
 
