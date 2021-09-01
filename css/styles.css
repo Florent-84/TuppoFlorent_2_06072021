@@ -1589,7 +1589,7 @@ li {
   }
 }
 
-/* Large devices ( 1023px and up) */
+/* Large devices ( 1024px) */
 @media only screen and (min-width: 1024px) and (max-width: 1159px) {
   .menu {
     display: flex;
@@ -1708,6 +1708,7 @@ li {
   #les-hébergements {
     height: 420px;
     width: auto;
+    width: 110%;
   }
 
   #photos-hébergements {
@@ -1721,6 +1722,8 @@ li {
   #photos-hébergements img {
     width: 170px;
     height: 80px;
+    width: 160px;
+    height: 75px;
   }
 
   .aubergelacannebière,
@@ -1732,6 +1735,8 @@ li {
     font-size: 11px;
     width: auto;
     height: auto;
+    width: 160px;
+    height: 135px;
     margin: 10px;
   }
 
@@ -1751,6 +1756,7 @@ li {
   figure {
     border: solid;
     width: 170px;
+    width: 160px;
     height: 130px;
     border-color: white;
     background-color: white;
@@ -1851,6 +1857,7 @@ li {
 
   #blockactivités {
     width: 100%;
+    height: 300px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1962,12 +1969,13 @@ li {
 
   #les-hébergements {
     width: 105%;
+    width: auto;
   }
 
   #photos-hébergements {
-    width: 700px;
-    margin-left: 28px;
-    justify-content: space-between;
+    width: 100%;
+    align-content: space-around;
+    margin-left: 0px;
   }
 
   .aubergelacannebière,
@@ -2051,8 +2059,8 @@ li {
     margin-left: 50px;
     font-size: 21px;
     font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 0px;
   }
 
   #les-hébergements {
@@ -2135,36 +2143,40 @@ li {
   }
 }
 
-@media only screen and (min-width: 1440px) and (max-width: 1520px) {
-  #les-hébergements {
-    width: 100%;
+@media only screen and (min-width: 1282px) and (max-width: 1356px) {
+  #premierephoto img,
+  #quatriemephoto img,
+  #deuxiemephoto img,
+  #troisiemephoto img,
+  #cinquiemephoto img,
+  #sixiemephoto img {
+    width: 280px;
+  }
+
+  .blockvieuxport,
+  .blockfort,
+  .blockiles,
+  .blockparcnational,
+  .notredamedelagarde,
+  .parclongchamp {
+    width: 280px;
+  }
+
+  figure#premierephoto,
+  figure#deuxiemephoto,
+  figure#troisiemephoto,
+  figure#quatriemephoto,
+  figure#cinquiemephoto,
+  figure#sixiemephoto {
+    width: 280px;
   }
 }
+
+
 
 @media only screen and (min-width: 1520px) and (max-width: 1775px) {
   #les-hébergements {
     width: 100%;
-  }
-
-  #photos-hébergements {
-    justify-content: space-around;
-  }
-
-  #photos-hébergements img {
-    width: 250px;
-  }
-
-  .aubergelacannebière,
-  .hotelduport,
-  .hotellesmouettes,
-  .hoteldelamer,
-  .aubergelepanier,
-  .hotelchezamina {
-    width: 250px;
-  }
-
-  figure {
-    width: 250px;
   }
 }
 
