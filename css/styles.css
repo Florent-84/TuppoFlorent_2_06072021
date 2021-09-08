@@ -135,7 +135,7 @@ input:nth-of-type(2) {
 }
 
 input {
-  font-family: "raleway";
+  
   text-align: left;
   font-size: medium;
   font-weight: bold;
@@ -269,12 +269,12 @@ button.loupe {
   display: flex;
 }
 
-#photos-hébergements img {
+#photos-hebergements img {
   width: 250px;
   height: 120px;
 }
 
-#les-hébergements {
+#les-hebergements {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -284,7 +284,7 @@ button.loupe {
   height: 620px;
 }
 
-.titre-hébergements {
+.titre-hebergements {
   display: flex;
   justify-content: flex-end;
   font-size: 21px;
@@ -294,7 +294,7 @@ button.loupe {
   margin-bottom: 10px;
 }
 
-#photos-hébergements {
+#photos-hebergements {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -329,7 +329,7 @@ figcaption {
   height: 40px;
 }
 
-.aubergelacannebière,
+.aubergelacannebiere,
 .hotelduport,
 .hotellesmouettes,
 .hoteldelamer,
@@ -341,7 +341,7 @@ figcaption {
   margin: 10px 10px 0px 10px;
 }
 
-.aubergelacannebière:hover,
+.aubergelacannebiere:hover,
 .hotelduport:hover,
 .hotellesmouettes:hover,
 .hoteldelamer:hover,
@@ -453,7 +453,7 @@ figcaption {
   margin-left: 10px;
 }
 
-.nuitàpartirde {
+.nuitapartirde {
   margin-left: 10px;
 }
 
@@ -484,7 +484,7 @@ figcaption {
 
 /* ACTIVITES A MARSEILLE */
 
-#blockactivités {
+#blockactivites {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -743,7 +743,7 @@ li {
     height: 120px;
   }
 
-  .nuitàpartirde {
+  .nuitapartirde {
     margin-left: 20px;
     height: 35px;
     font-size: 13px;
@@ -989,7 +989,7 @@ li {
   }
   /*hébergements à Marseille*/
 
-  .aubergelacannebière,
+  .aubergelacannebiere,
   .hotelduport,
   .hotellesmouettes,
   .hoteldelamer,
@@ -999,7 +999,7 @@ li {
     width: 100%;
   }
 
-  #les-hébergements {
+  #les-hebergements {
     display: flex;
     flex-direction: row;
     background-color: #f2f2f2;
@@ -1008,7 +1008,7 @@ li {
     height: 0px;
   }
 
-  .titre-hébergements {
+  .titre-hebergements {
     display: flex;
     justify-content: flex-start;
     width: 100%;
@@ -1017,12 +1017,12 @@ li {
     margin-bottom: 5%;
   }
 
-  #photos-hébergements {
+  #photos-hebergements {
     width: 100%;
     height: 1380px;
   }
 
-  #photos-hébergements img {
+  #photos-hebergements img {
     width: 100%;
     height: 120px;
   }
@@ -1368,7 +1368,7 @@ li {
     width: 300px;
   }
 
-  .nuitàpartirde {
+  .nuitapartirde {
     font-size: 14px;
     height: 0px;
   }
@@ -1379,7 +1379,7 @@ li {
 
   /*hébergements à Marseille*/
 
-  #les-hébergements {
+  #les-hebergements {
     display: flex;
     flex-direction: row;
     background-color: #f2f2f2;
@@ -1388,19 +1388,19 @@ li {
     height: 0px;
   }
 
-  .titre-hébergements {
+  .titre-hebergements {
     width: 100%;
     justify-content: flex-start;
     margin-left: 57px;
   }
 
-  #photos-hébergements {
+  #photos-hebergements {
     height: auto;
     justify-content: center;
     width: 100%;
   }
 
-  #photos-hébergements figure {
+  #photos-hebergements figure {
     margin: 0px;
   }
 
@@ -1436,7 +1436,7 @@ li {
     width: 90%;
   }
 
-  #blockactivités {
+  #blockactivites {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
@@ -1578,7 +1578,7 @@ li {
 }
 
 @media only screen and (min-width: 601px) and (max-width: 838px) {
-  #blockactivités {
+  #blockactivites {
     justify-content: space-around;
     margin: auto;
     width: 75%;
@@ -1684,7 +1684,7 @@ li {
     width: 100%;
   }
 
-  .aubergelacannebière,
+  .aubergelacannebiere,
   .hotelduport,
   .hotellesmouettes,
   .hoteldelamer,
@@ -1696,7 +1696,7 @@ li {
     margin: 0px 0px 0px 0px;
   }
 
-  .titre-hébergements {
+  .titre-hebergements {
     justify-content: flex-start;
     font-size: 15px;
     width: 100%;
@@ -1705,13 +1705,13 @@ li {
     margin-left: 30px;
   }
 
-  #les-hébergements {
+  #les-hebergements {
     height: 420px;
     width: auto;
     width: 110%;
   }
 
-  #photos-hébergements {
+  #photos-hebergements {
     align-content: center;
     justify-content: space-around;
     height: 340px;
@@ -1719,14 +1719,14 @@ li {
     margin-left: 15px;
   }
 
-  #photos-hébergements img {
+  #photos-hebergements img {
     width: 170px;
     height: 80px;
     width: 160px;
     height: 75px;
   }
 
-  .aubergelacannebière,
+  .aubergelacannebiere,
   .hotelduport,
   .hotellesmouettes,
   .hoteldelamer,
@@ -1788,7 +1788,7 @@ li {
     width: auto;
   }
 
-  #photo-hébergements {
+  #photo-hebergements {
     width: 810px;
   }
 
@@ -1825,7 +1825,7 @@ li {
     justify-content: flex-end;
   }
 
-  .nuitàpartirde {
+  .nuitapartirde {
     margin-left: 5px;
     font-size: 11px;
     height: 25px;
@@ -1855,7 +1855,7 @@ li {
     margin: 0px;
   }
 
-  #blockactivités {
+  #blockactivites {
     width: 100%;
     height: 300px;
     display: flex;
@@ -1864,7 +1864,7 @@ li {
     justify-content: space-between;
   }
 
-  #blockactivités h3 {
+  #blockactivites h3 {
     font-size: 12px;
     margin-top: 15px;
   }
@@ -1960,25 +1960,25 @@ li {
     width: 73%;
   }
 
-  .titre-hébergements {
+  .titre-hebergements {
     width: 100%;
     justify-content: flex-start;
     margin-left: 43px;
     margin-bottom: 20px;
   }
 
-  #les-hébergements {
+  #les-hebergements {
     width: 105%;
     width: auto;
   }
 
-  #photos-hébergements {
+  #photos-hebergements {
     width: 100%;
     align-content: space-around;
     margin-left: 0px;
   }
 
-  .aubergelacannebière,
+  .aubergelacannebiere,
   .hotelduport,
   .hotellesmouettes,
   .hoteldelamer,
@@ -1994,7 +1994,7 @@ li {
     height: 180px;
   }
 
-  #photos-hébergements img {
+  #photos-hebergements img {
     width: 200px;
     height: 100px;
   }
@@ -2054,7 +2054,7 @@ li {
 }
 
 @media only screen and (min-width: 1281px) and (max-width: 1520px) {
-  .titre-hébergements {
+  .titre-hebergements {
     justify-content: flex-start;
     margin-left: 50px;
     font-size: 21px;
@@ -2063,11 +2063,11 @@ li {
     margin-bottom: 0px;
   }
 
-  #les-hébergements {
+  #les-hebergements {
     width: auto;
   }
 
-  #photos-hébergements {
+  #photos-hebergements {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -2081,7 +2081,7 @@ li {
     margin-left: -10px;
   }
 
-  .aubergelacannebière,
+  .aubergelacannebiere,
   .hotelduport,
   .hotellesmouettes,
   .hoteldelamer,
@@ -2091,7 +2091,7 @@ li {
     height: 180px;
   }
 
-  #photos-hébergements img {
+  #photos-hebergements img {
     width: 200px;
     height: 100px;
   }
@@ -2175,33 +2175,33 @@ li {
 
 
 @media only screen and (min-width: 1520px) and (max-width: 1775px) {
-  #les-hébergements {
+  #les-hebergements {
     width: 100%;
   }
 }
 
 @media only screen and (min-width: 1775px) {
-  .titre-hébergements {
+  .titre-hebergements {
     justify-content: flex-start;
     width: 100%;
     margin-left: 50px;
   }
 
-  #les-hébergements {
+  #les-hebergements {
     width: 100%;
   }
 
-  #photos-hébergements img {
+  #photos-hebergements img {
     width: 300px;
   }
 
-  #photos-hébergements {
+  #photos-hebergements {
     justify-content: space-around;
     width: 95%;
     margin-left: 20px;
   }
 
-  .aubergelacannebière,
+  .aubergelacannebiere,
   .hotelduport,
   .hotellesmouettes,
   .hoteldelamer,
