@@ -1027,7 +1027,6 @@ li {
   }
 
   figure {
-    border: solid;
     border-radius: 20px;
     width: 97%;
     height: 190px;
@@ -1751,7 +1750,6 @@ li {
   }
 
   figure {
-    border: solid;
     width: 170px;
     width: 160px;
     height: 130px;
